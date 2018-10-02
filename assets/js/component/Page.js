@@ -1,0 +1,212 @@
+import React, {Component} from "react";
+
+// Links rule
+// Mainly Ref. 
+//   http://2018.igem.org/Judging/Pages_for_Awards
+//   http://2018.igem.org/Competition/Tracks/Hardware              
+// egs. 
+//   http://2017.igem.org/Team:Heidelberg/For_Judges
+//   http://2017.igem.org/Team:NTHU_Taiwan
+//   http://2017.igem.org/Team:Munich
+//   http://2017.igem.org/Team:TUDelft
+ 
+// Required:
+//     Attributions  - brozon
+//     InterLab - brozon
+//     Collaborations - silver
+//     Improve - gold
+//     Model - gold
+//     Demonstrate - gold
+
+import Home from './Home'
+
+import Description from './Description'
+import Design from './Design'
+import Result from './Result'
+import Demonstration from './Demonstration'
+
+import Member from './Member'
+import Sponsor from './Sponsor'
+import Attribution from './Attribution'
+
+
+import Overview from "./Overview"
+import Platform from "./Platform"
+import ImageDetection from "./ImageDetection"
+import Sampling from "./Sampling"
+import Environment from "./Environment"
+import Application from "./Application"
+
+
+import BioReactor from './BioReactor'
+import MvKit from './MvKit'
+
+import Model from './Model'
+import Experiment from './Experiment'
+import Parts from './Parts'
+import InterLab from './InterLab'
+import Protocol from './Protocol'
+import Notebook from './Notebook'
+
+import Silver from './Silver'
+import Gold from './Gold'
+import Education from './Education'
+import Interview from './Interview'
+import Public from './Public'
+import Collaboration from './Collaboration'
+
+import Judge from './Judge'
+
+
+
+const base = '/Team:NTHU_Taiwan'
+
+const Route =[
+
+    { path: base,
+      exact: true,
+      main: <Home name='Home'/>
+    },
+
+    // Project
+    { path: base+'/Description',
+      main: <Description name='Description'/>
+    },
+    { path: base+'/Design',
+      main: <Design name='Design'/>
+    },
+    { path: base+'/Result',
+      main: <Result name='Result'/>
+    },
+    { path: base+'/Demonstration',
+      main: <Demonstration name='Demonstration'/>
+    },
+
+    // Team
+    { path: base+'/Member',
+      main: <Member name='Member'/>
+    },
+    { path: base+'/Sponsor',
+      main: <Sponsor name='Sponsor'/>
+    },
+    { path: base+'/Attribution',
+      main: <Attribution name='Attribution'/>
+    },
+
+    // ACE
+    { path: base+'/Overview',
+      main: <Overview name='Overview'/>
+    },
+    { path: base+'/Platform',
+      main: <Platform name='Platform'/>
+    },
+    { path: base+'/Imaging',
+      main: <ImageDetection name='Image Detection'/>
+    },
+    { path: base+'/Sampling',
+      main: <Sampling name='Sampling'/>
+    },
+    { path: base+'/Environment',
+      main: <Environment name='Environment'/>
+    },
+    { path: base+'/Application',
+      main: <Application name='Application'/>
+    },
+
+
+    // Drylab
+    { path: base+'/Model',
+      main: <Model name='Model'/>
+    },
+    { path: base+'/BioReactor',
+      main: <BioReactor name='BioReactor'/>
+    },
+    
+    // Wetlab
+    { path: base+'/Experiment',
+      main: <Experiment name='Experiment'/>
+    },
+    { path: base+'/Parts',
+      main: <Parts name='Parts'/>
+    },
+  
+    { path: base+'/Protocol',
+      main: <Protocol name='Protocol'/>
+    },
+    { path: base+'/InterLab',
+      main: <InterLab  name='InterLab'/>
+    },
+    { path: base+'/Notebook',
+      main: <Notebook name='Notebook'/>
+    },
+
+    // Human Practice
+    { path: base+'/Silver',
+      main: <Silver name='Silver'/>,  
+    },
+    { path: base+'/Gold',
+      main: <Gold name='Gold'/>,
+    },
+    { path: base+ '/Education',
+      main: <Education name='Education'/>
+    },
+    { path: base+'/Interview',
+      main: <Interview name='Interview'/>
+    },
+    { path: base+'/Public',
+      main: <Public name='Public'/>,
+    },
+    { path: base+'/Collaboration',
+      main: <Collaboration name='Collaboration'/>,
+    },
+    { path: base+'/Judge',
+      main: <Judge name='Judge'/>
+    }
+]
+
+
+let Link = [
+
+    { display:'Project',
+      sublink: ['Description','Design','Result','Demonstration']
+    },
+
+    { display: 'Team',
+      sublink: ['Member','Sponsor','Attribution'] 
+    },
+
+    { display: 'ACE',
+      sublink: ['Overview','Platform','Imaging','Sampling','Environment','Application']
+    },
+
+    { display: 'Drylab',
+      sublink: ['Model','Bioreactor']
+    },
+
+    { display: 'Wetlab',
+      sublink: ['Experiment','Parts','Protocol','InterLab','Notebook']
+    },
+
+    { display: 'Human Practice',
+      sublink: [ 'Silver','Gold','Education','Public','Interview','Collaboration']
+    },
+
+    { display: 'For Judge',
+      sublink: 'Judge'
+    }
+]
+
+Link = Link.map(header=>{
+    let fulllink 
+    Array.isArray(header.sublink) 
+    ? fulllink = header.sublink.map( link=> `${base}/${link}`)
+    : fulllink = `${base}/${header.sublink}`
+    return {...header,fulllink}
+})
+
+
+export default {
+    base: base,
+    route: Route,
+    link: Link
+}

@@ -15,6 +15,7 @@ import Page from '../Page'
 const Top = styled.div`
     position: fixed;
     width: 100%;
+    height: 55px;
     display: flex;
     align-items: center;
     background-color: #003366;
@@ -25,17 +26,18 @@ const Top = styled.div`
 const IconWrapper = styled.div`
     display: inline-flex;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    margin: 0 15px;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
     cursor: pointer;
     z-index: 1;
     `
 
 const BarIcon = styled.div`
     position: absolute;
-    width: 25px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     border-radius: 1px;
     background-color: white;
 
@@ -43,25 +45,24 @@ const BarIcon = styled.div`
         content: '';
         position: absolute;
         border-radius: 1px;
-        width: 35px;
-        height: 3px;
+        width: 25px;
+        height: 2px;
         background-color: white;
     }
 
     &::before{
-        top: -10px;
+        top: -8px;
     }
 
     &::after{
-        top:10px;
+        top:8px;
     }
     
     `
 
 const TabName = styled.div`
-    font-size: 25px;
-    margin-left: 10px;
-    color: dimgrey;
+    font-size: 20px;
+    color: white;
     `
 
 
@@ -205,6 +206,7 @@ export default class Sidenav extends React.Component {
             <IconWrapper onClick={this.onBarClick}>
                 <BarIcon/>
             </IconWrapper>
+            <TabName>{this.props.appState.tabname}</TabName>
             </Top>
             
             </Sidebar>
@@ -218,9 +220,14 @@ export default class Sidenav extends React.Component {
     preventBodyScroll(){
         reaction(()=> this.props.appState.open,
         open=> {
-            open
-            ? document.body.style.overflowY='hidden' 
-            : document.body.style.overflowY='auto' })
+            if(open){
+                document.body.style.overflowY ='hidden'
+                document.body.style.position= 'fixed'
+            }else{
+                document.body.style.overflowY='auto'
+                document.body.style.position ='initial'
+            }
+        })
     }
 
 

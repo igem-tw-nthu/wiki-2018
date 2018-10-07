@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import Constant from 'Constant'
 import { inject, observer } from 'mobx-react';
+import Viewbar from './Viewbar';
 
+const ExtraWrapper = styled.div`
+    `
 
 const Wrapper = styled.div`
     width: 80%;
@@ -14,11 +17,12 @@ const Wrapper = styled.div`
     }
     `
 
+
 const Title = styled.div`
     font-size: 35px;
     color: #003366;
     margin-bottom: 30px;
-`
+    `
 
 const CardWrapper = styled.div`
     display: grid;
@@ -78,8 +82,7 @@ const Below = styled.div`
         width: 260px;
     `
     }
-
-`
+    `
 
 const Description = styled.div`
     `
@@ -128,14 +131,17 @@ const Content = [
       }
     },
 
-    { name: 'Teng-Yen Lin',
+    { name: 'Frank Lin',
       image: `${Constant.image.member.Teng_Yen_Lin}`,
       position: 'Drylab leader',
       department: 'Materials Science and Engineering',
-      description: 'Frank is a master student of department of materials science and engineering, NTHU. He is a dry lab leader and he plays a crucial role in our team. He shows responsibility in our project, leading dry lab to make our devices possible. Apart from the iGEM competition, he is researching about stem cells and bioengineering.'
+      description: 'Frank is a master student of department of materials science and engineering, NTHU. He is a dry lab leader and he plays a crucial role in our team. He shows responsibility in our project, leading dry lab to make our devices possible. Apart from the iGEM competition, he is researching about stem cells and bioengineering.',
+      contact : {
+        facebook : 'https://www.facebook.com/lin.t.yan.92'
+      }
     },
   
-    { name: 'Xin-Fang (Tina) Wu',
+    { name: 'Tina Wu',
       image: `${Constant.image.member.Tina_Wu}`,
       position: 'HP Leader',
       department: 'Electrical Engineering',
@@ -151,31 +157,43 @@ const Content = [
       image: `${Constant.image.member.Ruby_Chan}`,
       position: 'Wetlab',
       department: 'Chemistry',
-      description: 'A girl who is never satisfied with the status quo.'
+      description: 'A girl who is never satisfied with the status quo.',
+      contact : {
+          facebook: 'https://www.facebook.com/profile.php?id=100004026627188'
+      }
     },
 
-    { name: 'Kai-Chiang Yu',
+    { name: 'Andy Yu',
       image: `${Constant.image.member.Kai_Chiang_Yu}`,
       position: 'Wetlab',
       department: 'Chemistry',
-      description: `Andy, a senior student from department of chemistry, now struggling along the tenebrous road from hell.`
+      description: `Andy, a senior student from department of chemistry, now struggling along the tenebrous road from hell.`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100002090493215'
+      }
     },
 
     { name: 'Ricky Chan',
       image: `${Constant.image.member.Ricky_Chan}`,
       position: 'Wetlab',
       department: 'Applied Science',
-      description: `A boy who is curious about this unknown world, and likes to connect with different people. In iGEM NTHU TAIWAN, he participates in both wetlab and HP group. Therefore, sometimes he has to run around between the laboratory and local fishing rods. Although he  spent lots of time on it, he learned a lot and expand his horizons, feeling it's worth the efforts as well.`
+      description: `A boy who is curious about this unknown world, and likes to connect with different people. In iGEM NTHU TAIWAN, he participates in both wetlab and HP group. Therefore, sometimes he has to run around between the laboratory and local fishing rods. Although he  spent lots of time on it, he learned a lot and expand his horizons, feeling it's worth the efforts as well.`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100002901720732'
+      }
     },
 
-    { name: 'Yi-Chia(Emily) Wu',
+    { name: 'Emily Wu',
       image: `${Constant.image.member.Emily_Wu}`,
       position: 'Wetlab',
       department: 'Department of Life Science',
-      description: `Hi, I’m Emily, who majors in life science in NTHU. During my leisure time, I enjoy painting because it’s a way to show the fantastic ideas in my mind. My work in team NTHU_Taiwan is conducting the biology cloning in wet lab. I think I am a prudent person and I immerse myself in wet lab work. Besides, participating in this competition is truly inspire me to acquire problem-solving skills and knowledge of synthetic biology.`
+      description: `Hi, I’m Emily, who majors in life science in NTHU. During my leisure time, I enjoy painting because it’s a way to show the fantastic ideas in my mind. My work in team NTHU_Taiwan is conducting the biology cloning in wet lab. I think I am a prudent person and I immerse myself in wet lab work. Besides, participating in this competition is truly inspire me to acquire problem-solving skills and knowledge of synthetic biology.`,
+      contact:{
+          facebook: 'https://www.facebook.com/wu.jia.31'
+      }
     },
 
-    { name: 'Jia-Jyun (Jim) Jian',
+    { name: 'Jim Jian',
       image: `${Constant.image.member.Jim_Jian}`,
       position: 'Wetlab',
       department: 'Chemistry',
@@ -190,12 +208,13 @@ const Content = [
       }
     },
 
-    { name: 'YOU-YANG TSAI',
+    { name: 'Toby Tsai',
       image: `${Constant.image.member.You_Yang_Tsai}`,
       position: 'Wetlab',
       department: 'Chemistry',
       description: `YY, a big boy who is still in his puberty, is interesting in chemistry and physics and accidentally joins iGEM NTHU TAIWAN. Few months age, he devoted to become a great scientist who could make the world better. But now, his largest dream is to become a Master of Pokémon. If you are also crazy about Pokémon, contact me and add me to your friend list. We can pursue Dragonite, beat Mewtwo and talk a walk for hatching eggs together : )`,
       contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100003048785341',
           pokemon_id: '919370419502'
       }
     },
@@ -223,32 +242,54 @@ const Content = [
       }
     },
 
-    // { name: 'CHIA-MIN HUANG',
+    { name: 'Lily Huang',
+      image: `${Constant.image.member.Lily_Huang}`,
+      position: 'Drylab',
+      department: `Interdisciplinary Program of Nuclear Science`,
+      description: `Lily is an enthusiastic girl, and she always has endless ideas to share with the members. Besides of being a creative person, she also has the strong determination to break the status quo.`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100000166525445'
+      }
+    },
+
+    // { name: 'Mickey Huang',
     //   image: `${Constant.image.member.Chia_Min_Huang}`,
     //   position: 'Drylab',
     //   department: 'Physics',
-    //   description: `Mickey, a college student in third grade, studying phisics. Although her dream is to be a great scientist, she also like to make things on her own hand. And it is lucky for her to meet this iGEM group, which provides her such a good chance. She also like to sing and play volleyball. Thus she hope that everyone can develop some hobbies and also keep professional in the meantime, having a happy life.`
+    //   description: `Mickey, a college student in third grade, studying phisics. Although her dream is to be a great scientist, she also like to make things on her own hand. And it is lucky for her to meet this iGEM group, which provides her such a good chance. She also like to sing and play volleyball. Thus she hope that everyone can develop some hobbies and also keep professional in the meantime, having a happy life.`,
+    //   contact: {
+    //       facebook: 'https://www.facebook.com/mickeyhellomickeyhello'
+    //   }
     // },
 
-    { name: 'Jhang Chuan-Jia',
+    { name: 'Allen Jhang',
       image: `${Constant.image.member.Jhang_Chuan_Jia}`,
       position: 'Drylab',
       department: 'Electrical Engineering',
       description: `Hello! My name is Allen. I’m dynamic and like to chat with people. My major is electrical engineering, so I almost do everything with my computer (just kidding XD). I have many interests, e.g., observing stars, playing tennis, watching movies, etc. I believe one thing, “If I work hard today, I will achieve my dream in the future.”, so I always do my best and spend all the time on what I’m interested in. I’m looking forward to participating iGEM Jamboree and making friends with all you guys!`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100000340245103'
+      }
     },
 
-    { name: 'Lin Yi Hsin',
+    { name: 'Grace Lin',
       image: `${Constant.image.member.Lin_Yi_Hsin}`,
       position: 'Drylab',
       department: 'Electrical engineering',
-      description: `Hi, I'm Grace. I consider myself a person who loves to know people from different fields. I'm also into solving problems and creating things with what we learn. My dream is to devote myself to sustainable development. Therefore, in addition to iGEM's current project, I also start a program for promoting automatic reusable cup renting system in maker space. If you're interested in what we've been doing, feel free to contact me!`
+      description: `Hi, I'm Grace. I consider myself a person who loves to know people from different fields. I'm also into solving problems and creating things with what we learn. My dream is to devote myself to sustainable development. Therefore, in addition to iGEM's current project, I also start a program for promoting automatic reusable cup renting system in maker space. If you're interested in what we've been doing, feel free to contact me!`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100001812912955'
+      }
     },
 
-    { name: 'PEI-YUN WU',
+    { name: 'Heidi Wu',
       image: `${Constant.image.member.Pei_Yun_Wu}`,
       position: 'Drylab',
       department: 'Electrical Engineering',
-      description: `Hello, I'm Heidi, a second-grade student study in electrical engineering. My hobbies are making desserts, playing drums, and reading. The reason why I join NTHU_Taiwan is my curiosity about iGEM, and also I want to learn something besides my major. In the session of experiments and human practicing, I think I reach my expectation.`
+      description: `Hello, I'm Heidi, a second-grade student study in electrical engineering. My hobbies are making desserts, playing drums, and reading. The reason why I join NTHU_Taiwan is my curiosity about iGEM, and also I want to learn something besides my major. In the session of experiments and human practicing, I think I reach my expectation.`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100004060473140'
+      }
     },
 ]
 
@@ -297,6 +338,17 @@ const SquareBelow = styled(Below)`
     }
     `
 
+const ImageBarTitle = styled.div`
+    `
+
+const UpperTitle = styled.div`
+    position: relative;
+    right: 30px;
+    `
+
+const LowerTitle = styled.div`
+    `
+
 @inject('appState')
 @observer
 class Member extends Component {
@@ -307,8 +359,20 @@ class Member extends Component {
 
     render() {
         return(
+            <ExtraWrapper>
+            
+            <Viewbar
+              Title={
+                  <ImageBarTitle>
+                    <UpperTitle>3rd iGEM</UpperTitle>
+                    <LowerTitle>NTHU Taiwan</LowerTitle>
+                  </ImageBarTitle>
+              }
+              image={Constant.image.topfull.member} />
+            
+
             <Wrapper mobile={this.props.appState.mobile}>
-            <Title>Team Member</Title>
+            <Title>Member</Title>
             <CardWrapper mobile={this.props.appState.mobile}>
                 {Content.map((member,index)=>
                     <Card key={index} mobile={this.props.appState.mobile}>
@@ -377,9 +441,9 @@ class Member extends Component {
             )}
             
             </SquareCardWrapper>
-            
-            
+
             </Wrapper>
+            </ExtraWrapper>
         )
 
     }

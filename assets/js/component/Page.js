@@ -24,23 +24,25 @@ import Description from './Description'
 import Design from './Design'
 import Result from './Result'
 import Demonstration from './Demonstration'
+import Subproject from './Subproject'
+import Contribution from './Contribution'
 
 import Member from './Member'
 import Sponsor from './Sponsor'
 import Attribution from './Attribution'
 
 
-import Overview from "./Overview"
+import DrylabOverview from "./DrylabOverview"
 import Platform from "./Platform"
 import ImageDetection from "./ImageDetection"
 import Sampling from "./Sampling"
 import Environment from "./Environment"
+import Software from './Software'
 import Application from "./Application"
 
 
-import BioReactor from './BioReactor'
-import MvKit from './MvKit'
 
+import WetlabOverview from './WetlabOverview'
 import Model from './Model'
 import Experiment from './Experiment'
 import Parts from './Parts'
@@ -48,7 +50,6 @@ import InterLab from './InterLab'
 import Protocol from './Protocol'
 import Notebook from './Notebook'
 
-import Silver from './Silver'
 import Gold from './Gold'
 import Education from './Education'
 import Interview from './Interview'
@@ -70,10 +71,10 @@ const Route =[
 
     // Project
     { path: base+'/Description',
-      main: <Description name='Description'/>
+      main: <Description />
     },
     { path: base+'/Design',
-      main: <Design name='Design'/>
+      main: <Design />
     },
     { path: base+'/Result',
       main: <Result name='Result'/>
@@ -81,7 +82,13 @@ const Route =[
     { path: base+'/Demonstration',
       main: <Demonstration name='Demonstration'/>
     },
-
+    { path: base+ '/Subproject',
+      main: <Subproject name='Subproject'/>
+    },
+    { path: base+'/Contribution',
+      main: <Contribution name='Contribution'/>
+    },
+   
     // Team
     { path: base+'/Member',
       main: <Member name='Member'/>
@@ -93,15 +100,15 @@ const Route =[
       main: <Attribution name='Attribution'/>
     },
 
-    // ACE
-    { path: base+'/Overview',
-      main: <Overview name='Overview'/>
+    // Drylab
+    { path: base+'/Drylab/Overview',
+      main: <DrylabOverview name='Overview'/>
     },
     { path: base+'/Platform',
       main: <Platform name='Platform'/>
     },
     { path: base+'/Imaging',
-      main: <ImageDetection name='Image Detection'/>
+      main: <ImageDetection name='Imaging'/>
     },
     { path: base+'/Sampling',
       main: <Sampling name='Sampling'/>
@@ -113,16 +120,14 @@ const Route =[
       main: <Application name='Application'/>
     },
 
-
-    // Drylab
+    
+    // Wetlab
+    { path: base+'/Wetlab/Overview',
+      main: <WetlabOverview name='Overview'/>
+    },
     { path: base+'/Model',
       main: <Model name='Model'/>
     },
-    { path: base+'/BioReactor',
-      main: <BioReactor name='BioReactor'/>
-    },
-    
-    // Wetlab
     { path: base+'/Experiment',
       main: <Experiment name='Experiment'/>
     },
@@ -141,9 +146,6 @@ const Route =[
     },
 
     // Human Practice
-    { path: base+'/Silver',
-      main: <Silver name='Silver'/>,  
-    },
     { path: base+'/Gold',
       main: <Gold name='Gold'/>,
     },
@@ -159,40 +161,29 @@ const Route =[
     { path: base+'/Collaboration',
       main: <Collaboration name='Collaboration'/>,
     },
-    { path: base+'/Judge',
-      main: <Judge name='Judge'/>
-    }
 ]
 
 
 let Link = [
 
     { display:'Project',
-      sublink: ['Description','Design','Result','Demonstration']
+      sublink: ['Description','Design','Result','Demonstration','Subproject','Contribution']
     },
 
     { display: 'Team',
       sublink: ['Member','Sponsor','Attribution'] 
     },
 
-    { display: 'ACE',
-      sublink: ['Overview','Platform','Imaging','Sampling','Environment','Application']
-    },
-
     { display: 'Drylab',
-      sublink: ['Model','Bioreactor']
+      sublink: ['Drylab/Overview','Platform','Imaging','Sampling','Environment','Software','Application']
     },
 
     { display: 'Wetlab',
-      sublink: ['Experiment','Parts','Protocol','InterLab','Notebook']
+      sublink: ['Wetlab/Overview','Model','Experiment','Parts','Protocol','InterLab','Notebook']
     },
 
     { display: 'Human Practice',
-      sublink: [ 'Silver','Gold','Education','Public','Interview','Collaboration']
-    },
-
-    { display: 'For Judge',
-      sublink: 'Judge'
+      sublink: [ 'Education','Public','Interview','Collaboration', 'Gold']
     }
 ]
 

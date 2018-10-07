@@ -46,13 +46,18 @@ export default class Navigation extends React.Component{
         // if match home 
         if(Page.base == path){
             this.props.appState.pointerindex = -1
+            this.props.appState.tabname = 'Home'
         }
         else{
-            Page.link.map( ({fulllink},index)=>{  
+            Page.link.map( ({fulllink,sublink},index)=>{  
             // if match tab
             if(fulllink.includes(path)){
                 this.props.appState.pointerindex = index
-                this.props.appState.focusindex = fulllink.indexOf(path)
+                const focusindex = fulllink.indexOf(path)
+                this.props.appState.focusindex = focusindex
+                this.props.appState.tabname = Array.isArray(sublink) 
+                  ?  sublink[focusindex]
+                  :  sublink
             }
           })
         }

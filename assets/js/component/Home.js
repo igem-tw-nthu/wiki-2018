@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import {observable,toJS, reaction, autorun} from 'mobx'
 import {observer, Provider, inject} from 'mobx-react'
 import Swiper from 'react-id-swiper'
-import ImageBar from './ImageBar';
 
 
 const Wrapper = styled.div`

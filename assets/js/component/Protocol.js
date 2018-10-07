@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ImageBar from './ImageBar'
 
 export default class Protocol extends Component {
     constructor(props) {
@@ -9,7 +8,7 @@ export default class Protocol extends Component {
     
     render() {
         return (
-            <ImageBar imgurl='../assets/images/wetlab/Protocol.top.png'/>
+            null
         );
     }
 }

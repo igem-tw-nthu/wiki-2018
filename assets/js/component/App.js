@@ -19,12 +19,16 @@ const PageWrapper = styled.div`
 const ContentWrapper =  styled.div`
     position: relative;
     top: 70px;
+    ${({mobile})=> mobile && `
+        top: 50px;
+    `}
     width: 100%;
-    height: 100%;
     z-index: 0;
     `
 
+@withRouter
 @inject('appState')
+@observer
 class Content extends React.Component{
     constructor(props){
         super(props)
@@ -36,7 +40,7 @@ class Content extends React.Component{
         return(
           <PageWrapper>
             <Navigation/>
-            <ContentWrapper>
+            <ContentWrapper mobile={this.props.appState.mobile}>
               { Page.route.map((e,index)=>{
                   return <Route key={index} exact={e.exact} path={e.path} component={()=>e.main}/>
               })}

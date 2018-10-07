@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import ImageBar from './ImageBar'
+import Content from './Content';
+import Constant from './Constant';
+
+
+const Data={
+
+}
 
 export default class Parts extends Component {
     constructor(props) {
@@ -9,7 +15,7 @@ export default class Parts extends Component {
     
     render() {
         return (
-            <ImageBar imgurl='../assets/images/wetlab/Parts.top.png'/>
+            <Content/>
         );
     }
 }

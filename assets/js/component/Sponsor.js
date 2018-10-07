@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import Constant from './Constant';
+import { inject, observer } from 'mobx-react';
+
+
+const ExtraWrapper = styled.div`
+    `
 
 const Wrapper = styled.div`
     margin: auto;
     width: 70%;
+    ${ ({mobile})=> mobile && `
+        width: 90%
+    `
+    }
     `
 
 const Card = styled.div`
     display: flex;
     align-items: center;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     flex-wrap: wrap;
     width: fit-content;
     `
@@ -43,6 +52,10 @@ const Name = styled.div`
 
 const Description = styled.div`
     width: 450px;
+    ${({mobile})=> mobile && `
+        width: fit-content;
+    `
+    }
     `
 
 
@@ -91,10 +104,13 @@ const Content = [
     },
 ]
 
+@inject('appState')
+@observer
 class Sponsor extends Component {
     render() {
         return (
-            <Wrapper>
+            <ExtraWrapper>
+            <Wrapper mobile={this.props.appState.mobile}>
             { Content.map( (sponsor,index)=>
                 <Card key={index}>
                     <Left>
@@ -103,11 +119,14 @@ class Sponsor extends Component {
                         </LogoWrapper>
                     </Left>
                     <Side>
-                        <Description>{sponsor.description}</Description>
+                        <Description mobile={this.props.appState.mobile}>
+                            {sponsor.description}
+                        </Description>
                     </Side>
                 </Card>
             )}
             </Wrapper>
+            </ExtraWrapper>
         )
     }
 }

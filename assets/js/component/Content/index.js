@@ -6,10 +6,11 @@ import Viewbar from '../Viewbar';
 
 
 const Wrapper = styled.div`
+
     `
 
 const ContentWrapper = styled.div`
-    width: 45%;
+    width: 50%;
     margin: auto;
     font-size: 20px;
     `
@@ -22,6 +23,7 @@ const Title = styled.div`
     font-size: 30px;
     margin-bottom: 20px;
     font-weight: 600;
+    color: #003366;
     `
 
 const Introduction =styled.div`
@@ -37,16 +39,18 @@ class Content extends Component {
         super(props);   
     }
     render() {
-        console.log(this.props.content.Introduction)
         return (
             <Wrapper>
                 <Viewbar {...this.props.viewbar}/>
                 <ContentWrapper>
-                <Part>
-                    <Introduction>{this.props.content.Introduction}</Introduction>
-                </Part>
+                { this.props.content.Introduction 
+                    ? <Part>
+                        <Introduction>{this.props.content.Introduction}</Introduction>
+                      </Part> 
+                    : null
+                }
                 { this.props.content.parts.map( (part,index)=>
-                <Part key={index}>
+                  <Part key={index}>
                     { part.Title
                       ? <Title>{part.Title}</Title>
                       : null
@@ -55,7 +59,7 @@ class Content extends Component {
                       ? <Description>{part.Description}</Description>
                       : null
                     }
-                </Part>
+                  </Part>
                 )}
                 </ContentWrapper>
             </Wrapper>

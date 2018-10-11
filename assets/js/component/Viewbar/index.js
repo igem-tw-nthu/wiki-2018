@@ -45,6 +45,10 @@ const ViewImage = styled.img`
     background-color: whitesmoke;
     `
 
+const Underimage = styled.div`
+    color: gray;
+    `
+
 
 
 
@@ -61,6 +65,7 @@ class Viewbar extends Component {
                 </TitleWrapper>
                 <ImageWrapper>
                     <ViewImage src={this.props.image}/>
+                    <Underimage>{this.props.Underimage}</Underimage>
                 </ImageWrapper>
              </Wrapper>
              

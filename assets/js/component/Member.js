@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
     font-size: 35px;
+    font-weight: 600;
     color: #003366;
     margin-bottom: 30px;
     `
@@ -60,7 +61,7 @@ const Head = styled.img`
 const Name = styled.div`
     width: fit-content;
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     color: steelblue;
     `
 
@@ -68,7 +69,8 @@ const Department = styled.div`
     /* break line by \n */
     white-space: pre-line;
     width: fit-content;
-    margin: 6px auto;
+    font-size: 18px;
+    margin: 8px auto;
     `
 
 const Position = styled.div`
@@ -129,6 +131,18 @@ const Content = [
           facebook: 'https://www.facebook.com/tysh0106',
           linkedin: 'https://www.linkedin.com/in/tysh0106/'
       }
+    },
+    { name: 'Kevin Wang',
+      image: `${Constant.image.member.Kevin_Wang}`,
+      position: 'Wetlab',
+      department: 'Materials Science and Engineering/ Physics',
+      description: `I am Kevin Wang, a sophomore student study in Material Sciences and Physics. 
+      During iGEM, I design the gene circuit and most of gene fragments of our project this year, and including trouble shooting. This summer, I spent lots of time doing digestion-ligation, transform and PCR. Although failure make me feel frustration, I never give up till success. Beyond iGEM, I’m doing research about graphene’s physics properties and modeling tumor growth in physics method. Besides, I take care school’s stray dogs include feeding and medical treatment, and play tennis or softball at leisure time.
+      My dream is to become a scientist, and I will strive to pursuit my dream.`,
+      contact: {
+          facebook: 'https://www.facebook.com/profile.php?id=100001738147633'
+      }
+
     },
 
     { name: 'Frank Lin',
@@ -338,16 +352,9 @@ const SquareBelow = styled(Below)`
     }
     `
 
-const ImageBarTitle = styled.div`
-    `
 
-const UpperTitle = styled.div`
-    position: relative;
-    right: 30px;
-    `
 
-const LowerTitle = styled.div`
-    `
+
 
 @inject('appState')
 @observer
@@ -362,11 +369,12 @@ class Member extends Component {
             <ExtraWrapper>
             
             <Viewbar
-              Title={
-                  <ImageBarTitle>
-                    <UpperTitle>3rd iGEM</UpperTitle>
-                    <LowerTitle>NTHU Taiwan</LowerTitle>
-                  </ImageBarTitle>
+              Title="Member"
+              Subtitle={
+                  <div>
+                      <div>Meet the team</div>
+                      <div>3rd iGEM NTHU_Taiwan</div>
+                  </div>
               }
               image={Constant.image.topfull.member} />
             

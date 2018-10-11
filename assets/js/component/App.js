@@ -14,7 +14,7 @@ const appState = new AppState()
 
 
 const PageWrapper = styled.div`
-    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    font-family: "Bai Jamjuree","Segoe UI","微軟正黑體",sans-serif;
     `
 const ContentWrapper =  styled.div`
     position: relative;

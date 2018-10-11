@@ -6,9 +6,19 @@ const Url ={
 }
 
 
-let Image = {}
+let Image, Download, Video
 if(process.env.NODE_ENV === 'development'){
   // developement
+
+  Download = {
+    education: {}
+  }
+
+  Video = {
+    trans: '../assets/video/trans.mp4'
+  }
+
+
   Image = {
 
     icon:{
@@ -18,8 +28,36 @@ if(process.env.NODE_ENV === 'development'){
       ig: '../assets/images/icon/ig.png',
     },
 
+
+    description: {
+      infected: '../assets/images/project/description/infected.png'
+    },
+
+    design: {
+      exp : '../assets/images/project/design/exp.png',
+      equlibrium : '../assets/images/project/design/equi.png',
+      secrete: '../assets/images/project/design/secrete.png'
+    },
+
+    wetlab_overview: {
+      introduction: '../assets/images/wetlab/overview/introduction.png',
+      mechanism: '../assets/images/wetlab/overview/mechanism.png',
+      ahl: '../assets/images/wetlab/overview/ahl.png',
+    },
+
+    imaging:{
+      materials: '../assets/images/drylab/imaging/materials.png',
+      board: '../assets/images/drylab/imaging/boards.png',
+      algorithm : '../assets/images/drylab/imaging/algorithm.png',
+      light: '../assets/images/drylab/imaging/light.png',
+    },
+
     topfull:{
-      // each page....
+      description: '../assets/images/topfull/description.top.png',
+      design: '../assets/images/topfull/design.top.png',
+      parts: '../assets/images/topfull/parts.top.png',
+      protocol: '../assets/images/topfull/protocol.top.png',
+      imaging: '../assets/images/topfull/imaging.top.png',
       member: '../assets/images/topfull/member.top.png',
       public: '../assets/images/topfull/public.top.png',
       attribution: '',
@@ -49,6 +87,7 @@ if(process.env.NODE_ENV === 'development'){
       Vanessa_Chuang : '../assets/images/team/member/Vanessa Chuang.png',
       Kai_Chiang_Yu: '../assets/images/team/member/Kai-Chiang Yu.png',
       Lily_Huang: '../assets/images/team/member/Lily Huang.png',
+      Kevin_Wang: '../assets/images/team/member/Kevin Wang.png',
       icon: {
         bug: '../assets/images/team/member/bug.svg',
         pokemon: '../assets/images/team/member/pokemon.svg'
@@ -71,21 +110,34 @@ if(process.env.NODE_ENV === 'development'){
 
     },
 
+
     public: {
+      nctu: '../assets/images/hp/public/nctu.png',
+
+      meetup_group: '../assets/images/hp/public/meetup.group.png',
+      meetup_self: '../assets/images/hp/public/meetup.self.png',
+      presentation: '../assets/images/hp/public/presentation.png',
+
       trans: '../assets/images/team/hp/public/trans.png',
-      hspectre: '../assets/images/team/hp/public/hspectrum.png',
-      discuss_1_1: '../assets/images/team/hp/public/discuss.1.1.png',
-      discuss_1_2: '../assets/images/team/hp/public/discuss.1.2.png',
-      discuss_2: '../assets/images/team/hp/public/discuss.2.png',
-      discuss_3_1: '../assets/images/team/hp/public/discuss.3.1.png',
-      discuss_3_2: '../assets/images/team/hp/public/discuss.3.2.png'
+      hspectre: '../assets/images/hp/public/hspectrum.png',
+      discuss_1: '../assets/images/hp/public/discuss.1.png',
+      discuss_2_1: '../assets/images/hp/public/discuss.2.1.png',
+      discuss_2_2: '../assets/images/hp/public/discuss.2.2.png',
+      discuss_2_3: '../assets/images/hp/public/discuss.2.3.png',
+      discuss_3_1: '../assets/images/hp/public/discuss.3.1.png',
+      discuss_3_2: '../assets/images/hp/public/discuss.3.2.png',
+    
+      xgem: '../assets/images/hp/public/xgem.png'
     },
 
     education: {
-      pie_1: '',
-      pie_2: '',
-      pie_3: ''
+      pie_1: '../assets/images/hp/education/pie.1.png',
+      pie_2: '../assets/images/hp/education/pie.2.png',
+      pie_3: '../assets/images/hp/education/pie.3.png',
+      group: '../assets/images/hp/education/group.png'
     },
+
+   
 
   
 
@@ -180,6 +232,8 @@ const Color ={
 
 export default {
     image: Image,
+    video: Video,
+    download: Download,
     url: Url,
     color: Color
 }

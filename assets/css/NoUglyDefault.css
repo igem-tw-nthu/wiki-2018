@@ -17,6 +17,8 @@ body{
 
 a{
     padding: initial;
+    text-decoration: none;
+    color: steelblue;
 }
 
 p{
@@ -40,3 +42,69 @@ p{
     font-size: initial;
     font-family: initial;
 }
+
+
+
+
+
+/* global css */
+
+.part{
+    margin-top: 40px;
+}
+
+
+.innerpart{
+    margin-top: 10px;
+}
+
+.illustration{
+    margin: 20px 0px;
+}
+
+.illust-image-wrapper{
+    width: 350px;
+    margin: auto;
+}
+
+
+.illust-image{
+    width: 100%;
+}
+
+
+.undertext{
+    width: fit-content;
+    margin: auto;
+    font-size: 18px;
+    color: gray;
+}
+
+.table{
+    margin: 20px auto;
+    width: fit-content;
+    border-collapse: collapse;
+}
+
+
+.tabledata{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tablehead{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.gallery{
+    display: flex;
+    width: 100%;
+}
+
+
+.gallery-image{
+    margin: auto;
+}
+

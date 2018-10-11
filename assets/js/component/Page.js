@@ -46,7 +46,6 @@ import WetlabOverview from './WetlabOverview'
 import Model from './Model'
 import Experiment from './Experiment'
 import Parts from './Parts'
-import InterLab from './InterLab'
 import Protocol from './Protocol'
 import Notebook from './Notebook'
 
@@ -71,10 +70,10 @@ const Route =[
 
     // Project
     { path: base+'/Description',
-      main: <Description />
+      main: <Description name='Description'/>
     },
     { path: base+'/Design',
-      main: <Design />
+      main: <Design name='Design'/>
     },
     { path: base+'/Result',
       main: <Result name='Result'/>
@@ -101,7 +100,7 @@ const Route =[
     },
 
     // Drylab
-    { path: base+'/Drylab/Overview',
+    { path: base+'/Drylab-Overview',
       main: <DrylabOverview name='Overview'/>
     },
     { path: base+'/Platform',
@@ -116,13 +115,17 @@ const Route =[
     { path: base+'/Environment',
       main: <Environment name='Environment'/>
     },
+    { path: base+'/Software',
+      main: <Software name="Software"/>
+
+    },
     { path: base+'/Application',
       main: <Application name='Application'/>
     },
 
     
     // Wetlab
-    { path: base+'/Wetlab/Overview',
+    { path: base+'/Wetlab-Overview',
       main: <WetlabOverview name='Overview'/>
     },
     { path: base+'/Model',
@@ -137,9 +140,6 @@ const Route =[
   
     { path: base+'/Protocol',
       main: <Protocol name='Protocol'/>
-    },
-    { path: base+'/InterLab',
-      main: <InterLab  name='InterLab'/>
     },
     { path: base+'/Notebook',
       main: <Notebook name='Notebook'/>
@@ -175,11 +175,11 @@ let Link = [
     },
 
     { display: 'Drylab',
-      sublink: ['Drylab/Overview','Platform','Imaging','Sampling','Environment','Software','Application']
+      sublink: ['Drylab-Overview','Platform','Imaging','Sampling','Environment','Software','Application']
     },
 
     { display: 'Wetlab',
-      sublink: ['Wetlab/Overview','Model','Experiment','Parts','Protocol','InterLab','Notebook']
+      sublink: ['Wetlab-Overview','Model','Experiment','Parts','Protocol','Notebook']
     },
 
     { display: 'Human Practice',

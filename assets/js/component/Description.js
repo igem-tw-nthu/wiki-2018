@@ -31,26 +31,26 @@ const Overview =
 
 const Solution =
     <div>
-        <div>
+        <div className='part'>
             Our project can be divided into two parts: one is to dose appropriate and corrected drug, and the other is to automatically detect the water quality and the concentration of specific bacteria. 
         </div>
-        <div>
+        <div className='part'>
             To implement the idea of appropriately dosing antibiotics, we design a system based on the model of succession. Our engineered E. coli will detect acyl homoserine lactone (AHL) secreted by Vibrio through quorum sensing and triggers our engineered bacteria to produce an antimicrobial peptide which is able to kill Vibrio. The killing genes are regulated by a riboswitch called small transcription activating RNAs (STAR) system. In comparison to regulatory proteins, STAR shows the advantages of lowering leakage problem, shortening response time, and decreasing the burden of translation. The system regulates the rate of killing Vibrio and E. coli itself in order to keep the population of Vibrio under the pathogenic level and maintain the balance between two bacteria at the same time. Therefore, we can control the Vibrio population and avoid fish and shrimp infection in a sustainable way. Moreover, in order to verify our succession model, we design a bioreactor which is low-cost and is a real-time O.D. measuring device. It is able to track two engineered germs at the same time by detecting two excitation light bands and to calculate their concentrations separately.
         </div>
-        <div>
+        <div className='part'>
             On the part of detecting water quality, precisely the concentration of specific bacteria in the water, we design an automatic and high-specificity detecting device. The current detection methods are time-consuming and furthermore, the water quality monitoring system on the market currently is able to detect physical and chemical indexes only. Therefore, we aim to create an IoT detecting device which can collect the water sample automatically and periodically. Then it is able to detect the concentration of specific bacteria with high specificity. For instance, it can detect the concentration of 100 CFU/mL of Vibrio within 20 hours. It informs fisherman regularly and it has the potential to reduce the financial loss of our aquaculture industry. 
         </div>
     </div>
 
 const Reference =   
     <div>
-        <div>
+        <div className='innerpart'>
         Ching-Ying Deng, Meei-Mei Chen, Ju-Hsien Peng, Yu-Chiao Yang, Chih-Chien Chang, Hui-Ping Tsai 2014 The Investigation on the Infection of Francisellosis in Farmed Tilapia in Taoyuan and Hsinchu Areas. Journal of Taiwan Fisheries Research,22 (1): 81-91
         </div>
-        <div>
+        <div className='innerpart'>
         朱惠真; 黃美瑩; 劉旭展; 曾亮瑋; 潘崇良; 張錦宜 2016 Screening Bacteria Antagonistic toward Aquatic Pathogenic Vibrio spp. from Marine Fishes and Shrimp. Journal of Taiwan Fisheries Research, 24 (1): 37-50
         </div>
-        <div>
+        <div className='innerpart'>
         張錦宜、吳嘉哲、林金榮. 2011. 水產病原性弧菌數檢測套組之研發. 水試專訊, 034, 36-39
         </div>
     </div>

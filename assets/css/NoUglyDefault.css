@@ -54,12 +54,18 @@ p{
 }
 
 
+.part-title{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
 .innerpart{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .illustration{
-    margin: 20px 0px;
+    margin: 20px auto;
 }
 
 .illust-image-wrapper{
@@ -81,7 +87,7 @@ p{
 }
 
 .table{
-    margin: 20px auto;
+    margin: 10px auto;
     width: fit-content;
     border-collapse: collapse;
 }
@@ -99,12 +105,11 @@ p{
 
 
 .gallery{
-    display: flex;
-    width: 100%;
+    width: 95%;
+    margin: 30px auto;
 }
 
 
 .gallery-image{
     margin: auto;
 }
-

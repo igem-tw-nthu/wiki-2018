@@ -93,8 +93,8 @@ const Reference =
 const Data = {
     viewbar: {
         Title: 'Wetlab',
-        Subtitle : '',
-        image: Constant.image.topfull.wetlab
+        Subtitle : 'Detector, comparator, and controller module',
+        image: Constant.image.topfull.wetlab_overview
     },
     content: {
         Introduction: Introduction,

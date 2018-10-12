@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import Constant from './Constant';
-import { inject, observer } from 'mobx-react';
+import Content from './Content'
 
 
 const ExtraWrapper = styled.div`
     `
 
 const Wrapper = styled.div`
-    margin: auto;
-    width: 70%;
-    ${ ({mobile})=> mobile && `
-        width: 90%
-    `
-    }
+    
     `
 
 const Card = styled.div`
@@ -59,7 +54,7 @@ const Description = styled.div`
     `
 
 
-const Content = [
+const List = [
     { name: 'Shun Yih Co., Ltd',
       image: `${Constant.image.sponsor.Shun_Yih}`,
       imageStyle: {
@@ -104,29 +99,48 @@ const Content = [
     },
 ]
 
-@inject('appState')
-@observer
+
+const Sum =
+    <ExtraWrapper>
+    <Wrapper >
+    { List.map( (sponsor,index)=>
+        <Card key={index}>
+            <Left>
+                <LogoWrapper>
+                <Logo src={sponsor.image} style={sponsor.imageStyle} />
+                </LogoWrapper>
+            </Left>
+            <Side>
+                <Description >
+                    {sponsor.description}
+                </Description>
+            </Side>
+        </Card>
+    )}
+    </Wrapper>
+    </ExtraWrapper>
+
+
+
+const Data = {
+    viewbar: {
+        Title: 'Sponsor',
+        Subtitle: 'You make our project to be successful.',
+        image: Constant.image.topfull.sponsor
+    },
+    content :{
+        Introduction: '', 
+        parts: [
+            { Description: Sum }
+        ]
+    }
+}
+
+
 class Sponsor extends Component {
     render() {
         return (
-            <ExtraWrapper>
-            <Wrapper mobile={this.props.appState.mobile}>
-            { Content.map( (sponsor,index)=>
-                <Card key={index}>
-                    <Left>
-                        <LogoWrapper>
-                        <Logo src={sponsor.image} style={sponsor.imageStyle} />
-                        </LogoWrapper>
-                    </Left>
-                    <Side>
-                        <Description mobile={this.props.appState.mobile}>
-                            {sponsor.description}
-                        </Description>
-                    </Side>
-                </Card>
-            )}
-            </Wrapper>
-            </ExtraWrapper>
+            <Content {...Data}/>
         )
     }
 }

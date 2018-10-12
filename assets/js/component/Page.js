@@ -22,7 +22,6 @@ import Home from './Home'
 
 import Description from './Description'
 import Design from './Design'
-import Result from './Result'
 import Demonstration from './Demonstration'
 import Subproject from './Subproject'
 import Contribution from './Contribution'
@@ -74,9 +73,6 @@ const Route =[
     },
     { path: base+'/Design',
       main: <Design name='Design'/>
-    },
-    { path: base+'/Result',
-      main: <Result name='Result'/>
     },
     { path: base+'/Demonstration',
       main: <Demonstration name='Demonstration'/>
@@ -167,7 +163,7 @@ const Route =[
 let Link = [
 
     { display:'Project',
-      sublink: ['Description','Design','Result','Demonstration','Subproject','Contribution']
+      sublink: ['Description','Design','Demonstration','Subproject','Contribution']
     },
 
     { display: 'Team',

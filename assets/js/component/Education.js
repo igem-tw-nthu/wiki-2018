@@ -20,8 +20,13 @@ const Subtitle =
 
 const SummerCamp =
     <div>
-        In this summer, we cooperated with National Feng-Shan Senior High School(link: http://www.fssh.khc.edu.tw/) to hold a summer synthetic biology camp. We both aimed to let students know more about iGEM and synthetic biology. During the camp, participants learned how to carry out simple experiments, e.g. plasmid extraction and transformation. We also shared with the students about our iGEM project and briefly introduced synthetic biology. The following are the schedule and all the material we used in the camp. About our files used in this camp are all available to download and free! The only thing you have to notice is the language, most are in Chinese.
+        In this summer, we cooperated with 
+        <a href='http://www.fssh.khc.edu.tw/'> National Feng-Shan Senior High School </a>
+        to hold a summer synthetic biology camp. We both aimed to let students know more about iGEM and synthetic biology. During the camp, participants learned how to carry out simple experiments, e.g. plasmid extraction and transformation. We also shared with the students about our iGEM project and briefly introduced synthetic biology. The following are the schedule and all the material we used in the camp. About our files used in this camp are all available to download and free! The only thing you have to notice is the language, most are in Chinese.
+        [檔案放雲端]
     </div>
+
+
 
 
 const Schedule=

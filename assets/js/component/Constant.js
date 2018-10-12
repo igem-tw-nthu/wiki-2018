@@ -14,11 +14,6 @@ if(process.env.NODE_ENV === 'development'){
     education: {}
   }
 
-  Video = {
-    trans: '../assets/video/trans.mp4'
-  }
-
-
   Image = {
 
     icon:{
@@ -52,6 +47,12 @@ if(process.env.NODE_ENV === 'development'){
       light: '../assets/images/drylab/imaging/light.png',
     },
 
+    platform: {
+      transparent: '../assets/images/drylab/platform/transparent.png',
+      moving: '../assets/images/drylab/platform/moving.png',
+      block: '../assets/images/drylab/platform/block.png'
+    },
+
     topfull:{
       description: '../assets/images/topfull/description.top.png',
       design: '../assets/images/topfull/design.top.png',
@@ -62,12 +63,13 @@ if(process.env.NODE_ENV === 'development'){
       public: '../assets/images/topfull/public.top.png',
       attribution: '',
 
-
+      
       education: '../assets/images/topfull/education.top.png',
       collaboration : '../assets/images/topfull/collaboration.top.png',
       interview: '../assets/images/topfull/interview.top.png',
       interlab: '../assets/images/topfull/interLab.top.png',
-      experiment: '../assets/images/topfull/experiment.top.png'
+      experiment: '../assets/images/topfull/experiment.top.png',
+      wetlab_overview: '../assets/images/topfull/wetlab_overview.top.png'
     },
 
     member:{
@@ -116,10 +118,11 @@ if(process.env.NODE_ENV === 'development'){
 
       meetup_group: '../assets/images/hp/public/meetup.group.png',
       meetup_self: '../assets/images/hp/public/meetup.self.png',
-      presentation: '../assets/images/hp/public/presentation.png',
+      meetup_presentation: '../assets/images/hp/public/presentation.png',
 
-      trans: '../assets/images/team/hp/public/trans.png',
+      trans: '../assets/images/hp/public/trans.png',
       hspectre: '../assets/images/hp/public/hspectrum.png',
+
       discuss_1: '../assets/images/hp/public/discuss.1.png',
       discuss_2_1: '../assets/images/hp/public/discuss.2.1.png',
       discuss_2_2: '../assets/images/hp/public/discuss.2.2.png',
@@ -127,7 +130,10 @@ if(process.env.NODE_ENV === 'development'){
       discuss_3_1: '../assets/images/hp/public/discuss.3.1.png',
       discuss_3_2: '../assets/images/hp/public/discuss.3.2.png',
     
-      xgem: '../assets/images/hp/public/xgem.png'
+      xgem: '../assets/images/hp/public/xgem.png',
+      chart_1: '../assets/images/hp/public/chart.1.png',
+      chart_2: '../assets/images/hp/public/chart.2.png',
+      chart_3: '../assets/images/hp/public/chart.3.png'
     },
 
     education: {
@@ -232,7 +238,6 @@ const Color ={
 
 export default {
     image: Image,
-    video: Video,
     download: Download,
     url: Url,
     color: Color

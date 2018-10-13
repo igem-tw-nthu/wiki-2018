@@ -65,7 +65,7 @@ export default class TopBar extends React.Component{
         return(
             <Wrapper>
                 <Icon src={Constant.image.icon.team} 
-                    onClick={()=>{this.props.history.replace(Page.base)}}/>
+                    onClick={()=>{this.props.history.push(Page.base)}}/>
                 <HeaderWrapper>
                     { Page.link.map((header,index)=>{
                         return <TopHeader key={index} {...header}/>

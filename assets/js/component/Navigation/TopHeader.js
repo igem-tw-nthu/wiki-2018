@@ -105,11 +105,11 @@ export default class TopHeader extends React.Component{
 
     onItemClick(index){
         const url = this.props.fulllink[index]
-        this.props.history.replace(url)
+        this.props.history.push(url)
     }
 
     onHeaderClick(){
         const url = this.props.fulllink
-        this.props.history.replace(url)
+        this.props.history.push(url)
     }
 }

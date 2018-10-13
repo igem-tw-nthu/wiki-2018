@@ -23,7 +23,6 @@ import Home from './Home'
 import Description from './Description'
 import Design from './Design'
 import Demonstration from './Demonstration'
-import Subproject from './Subproject'
 import Contribution from './Contribution'
 
 import Member from './Member'
@@ -76,9 +75,6 @@ const Route =[
     },
     { path: base+'/Demonstration',
       main: <Demonstration name='Demonstration'/>
-    },
-    { path: base+ '/Subproject',
-      main: <Subproject name='Subproject'/>
     },
     { path: base+'/Contribution',
       main: <Contribution name='Contribution'/>
@@ -163,11 +159,7 @@ const Route =[
 let Link = [
 
     { display:'Project',
-      sublink: ['Description','Design','Demonstration','Subproject','Contribution']
-    },
-
-    { display: 'Team',
-      sublink: ['Member','Sponsor','Attribution'] 
+      sublink: ['Description','Design','Demonstration','Contribution']
     },
 
     { display: 'Drylab',
@@ -180,7 +172,11 @@ let Link = [
 
     { display: 'Human Practice',
       sublink: [ 'Education','Public','Interview','Collaboration', 'Gold']
-    }
+    },
+    { display: 'Team',
+      sublink: ['Member','Sponsor','Attribution'] 
+    },
+
 ]
 
 Link = Link.map(header=>{

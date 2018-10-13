@@ -45,13 +45,13 @@ const Solution =
 const Reference =   
     <div>
         <div className='innerpart'>
-        Ching-Ying Deng, Meei-Mei Chen, Ju-Hsien Peng, Yu-Chiao Yang, Chih-Chien Chang, Hui-Ping Tsai 2014 The Investigation on the Infection of Francisellosis in Farmed Tilapia in Taoyuan and Hsinchu Areas. Journal of Taiwan Fisheries Research,22 (1): 81-91
+        Ching-Ying Deng, Meei-Mei Chen, Ju-Hsien Peng, Yu-Chiao Yang, Chih-Chien Chang, Hui-Ping Tsai (2014) The Investigation on the Infection of Francisellosis in Farmed Tilapia in Taoyuan and Hsinchu Areas. Journal of Taiwan Fisheries Research,22 (1): 81-91
         </div>
         <div className='innerpart'>
-        朱惠真; 黃美瑩; 劉旭展; 曾亮瑋; 潘崇良; 張錦宜 2016 Screening Bacteria Antagonistic toward Aquatic Pathogenic Vibrio spp. from Marine Fishes and Shrimp. Journal of Taiwan Fisheries Research, 24 (1): 37-50
+        C. Y. Chang, et al. (2016) Screening Bacteria Antagonistic toward Aquatic Pathogenic Vibrio spp. from Marine Fishes and Shrimp. Journal of Taiwan Fisheries Research, 24 (1): 37-50
         </div>
         <div className='innerpart'>
-        張錦宜、吳嘉哲、林金榮. 2011. 水產病原性弧菌數檢測套組之研發. 水試專訊, 034, 36-39
+        H. C. Chu, et al. (2011) Development of Multiple Vibrio Detecting Kit. Special Report from Fisheries Research Institute. 034, 36-39
         </div>
     </div>
 
@@ -59,7 +59,7 @@ const Reference =
 const Data = {
     viewbar: {
         Title:'Description',
-        Subtitle: Subtitle,
+        Subtitle: 'A solution to the problem of the abuse of antibiotics in aquaculture',
         image: Constant.image.topfull.description
     },
     content: {

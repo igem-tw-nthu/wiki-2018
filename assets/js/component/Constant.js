@@ -63,6 +63,7 @@ if(process.env.NODE_ENV === 'development'){
       public: '../assets/images/topfull/public.top.png',
       attribution: '',
 
+      sponsor: '../assets/images/topfull/sponsor.top.png',
       
       education: '../assets/images/topfull/education.top.png',
       collaboration : '../assets/images/topfull/collaboration.top.png',
@@ -94,6 +95,10 @@ if(process.env.NODE_ENV === 'development'){
         bug: '../assets/images/team/member/bug.svg',
         pokemon: '../assets/images/team/member/pokemon.svg'
       }
+    },
+
+    attribution:{
+      list: '../assets/images/team/attribution/list.png'
     },
 
     supervisor: {

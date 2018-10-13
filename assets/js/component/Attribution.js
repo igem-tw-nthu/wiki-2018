@@ -80,21 +80,29 @@ const AddThanks =
         </div>
     </div>
 
+const Individual =
+    <div className='illustration'>
+        <img className='illust-image' src={Constant.image.attribution.list}/>
+    </div>
+
 
 const Data = {
     viewbar: {
         Title: 'Attribution',
-        Subtitle: '',
+        Subtitle: 'We would like to thank people who makes our project possible.',
         image: Constant.image.topfull.attribution
     },
     content:{
-        Introduction: `We would like to thank people who makes our project possible.`,
+        Introduction: ``,
         parts:[
             { Title: 'Special Thanks',
               Description: SpThanks
             },
             { Title: 'Additional Thanks',
               Description: AddThanks
+            },
+            { Title: 'Individual Attributions',
+              Description: Individual
             }
         ]
     }

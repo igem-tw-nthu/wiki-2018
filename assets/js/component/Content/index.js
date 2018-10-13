@@ -13,6 +13,8 @@ const ContentWrapper = styled.div`
     width: 50%;
     margin: auto;
     font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
     `
 
 const Part = styled.div`

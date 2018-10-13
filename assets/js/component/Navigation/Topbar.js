@@ -6,6 +6,7 @@ import {observable,toJS} from 'mobx'
 import {observer, Provider, inject} from 'mobx-react'
 import { withRouter,Route } from "react-router-dom";
 
+import Constant from '../Constant'
 import TopHeader from './TopHeader'
 import Page from '../Page';
 
@@ -37,16 +38,17 @@ const HeaderWrapper = styled.div`
     `
 
 const Icon = styled.img`
-    height: 65px;
+    height: 80px;
     padding: 5px;
     position: absolute;
-    top: 10px;
+    top: 20px;
     margin-left: 30px;
     margin-right: 10px;
     background-color: white;
     border-radius: 20%;
     /* border-radius: 50%; */
     box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
     `
 
 
@@ -62,8 +64,8 @@ export default class TopBar extends React.Component{
     render(){
         return(
             <Wrapper>
-                {/* <Icon src={Constant.image.icon.team} 
-                    onClick={()=>{this.props.history.push(Constant.base)}}/> */}
+                <Icon src={Constant.image.icon.team} 
+                    onClick={()=>{this.props.history.replace(Page.base)}}/>
                 <HeaderWrapper>
                     { Page.link.map((header,index)=>{
                         return <TopHeader key={index} {...header}/>

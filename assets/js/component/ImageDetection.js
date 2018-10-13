@@ -7,7 +7,7 @@ import Constant from './Constant';
 
 const Introduction = 
     <div>
-        For the results of color-changing, we write a program to detect them. In our device, there are 24 samples processing the chemical reaction simultaneously. During the reaction, we want to get all samples’ color values immediately, so we adopt image detection executed by Raspberry Pi to analyze the whole status directly. The following are three parts for our image detection, which is how to do, advantages, and problems respectively
+        For the results of color-changing, we write a program to detect them. In our device, there are 24 samples processing the chemical reaction simultaneously. During the reaction, we want to get all samples’ color values immediately, so we adopt image detection executed by Raspberry Pi to analyze the whole status directly. The following are three parts for our image detection, which is how to do, advantages, and problems respectively.
     </div>
 
 
@@ -35,7 +35,6 @@ const HowtoDo =
 
         <div className='illustration'>
             <img className='illust-image' src={Constant.image.imaging.materials}/>
-            <div className='undertext'>(a) Raspberry Pi (b) Webcam (c) Wide-angle</div>
         </div>
 
         <div className='part'>The core of image detection is executed by Raspberry Pi and the program language we use is python. With a camera and wide-angle lens, it can capture the scene in a relatively lower height. To do the image processing, OpenCV, open source library, is the best choice. Because the program will send warning message to the users, for simplicity and stability, we choose MQTT to be the transport protocol.</div>
@@ -66,7 +65,7 @@ const Advantage =
         <div className='part'>
             <div>3.	Flexibility</div>
             <div className='innerpart'>
-                The section program analyzes on the captured image can be modified whenever the captured one is changed. Therefore, we don’t have to fix the position of all samples. Due to this advantage, any type of sample can be analyzed accurately
+                The section program analyzes on the captured image can be modified whenever the captured one is changed. Therefore, we don’t have to fix the position of all samples. Due to this advantage, any type of sample can be analyzed accurately.
             </div>
         </div>
     </div>
@@ -88,9 +87,8 @@ const Problem =
             <div className='innerpart'>
                 <div className='illustration'>
                     <img className='illust-image' src={Constant.image.imaging.board}/>
-                    <div className='undertext'>(a) Arduino UNO (b) Raspberry Pi (c) Udoo Neo </div>
                 </div>
-                For the development boards, there are three choices, Arduino, Udoo Neo, and Raspberry Pi. Considering the efficiency, Arduino might not be able to run OpenCV effectively. The another consideration is the cost. Because we want to design a low-cost device cheaper than the related machine sold on the market, the price of Udoo Neo is too expensive for us. Therefore, we chose Raspberry Pi to be our execution core.
+                For the development boards, there are three choices, Arduino, Udoo Neo, and Raspberry Pi. Considering the efficiency, Arduino might not be able to run OpenCV effectively. The another consideration is the cost. Because we want to design a low-cost device cheaper than the similar machine sold on the market, the price of Udoo Neo is too expensive for us. Therefore, we chose Raspberry Pi to be our execution core.
             </div>
         </div>
         <div className='part'>
@@ -98,9 +96,8 @@ const Problem =
             <div className='innerpart'>
                 <div className='illustration'>
                     <img className='illust-image' src={Constant.image.imaging.algorithm}/>
-                    <div className='undertext'>(a) Simplified location, Manually (b) Houghcircles, Automatically</div>
                 </div>
-                In the beginning, we planned to use OpenCV built-in function Houghcircles to do image detection. The detail of the function is that it can find circles on the image automatically. It completely meets our expectation. However, the distance and angle between each sample and the camera are different. As a result, the shape of the sample is not a circle on the captured image and leads to wrong detection by Houghcircles. For this reason, we changed the method and decided to locate the samples manually to get a high accuracy.
+                In the beginning, we planned to use OpenCV built-in function Houghcircles to do image detection. The detail of the function is that it can find circles on the image automatically. It completely meets our expectation. However, the distance and angle of each sample from the camera is different. As a result, the shape of the sample is not a circle on the captured image and leads to wrong detection by Houghcircles. For this reason, we changed the method and decided to locate the samples manually to get a high accuracy.
             </div>
         </div>
     </div>
@@ -111,7 +108,6 @@ const LED =
         <div className='part'>
         <div className='illustration'>
             <img className='illust-image' src={Constant.image.imaging.light} />
-            <div className='undertext'>(a) LED strip (b) Big bulb</div>
         </div>
         In order to prevent the influence of environment outside the device, ACE is designed to be enclosed. Therefore, it is completely dark inside the device and needs a light source to do image detection. In the beginning, we thought a big bulb is simple and suitable. Nevertheless, after we tested, we found the light on the image is not even, it would result in the wrong analysis. As a result, we chose LED strip. Its light is not only even but also bright enough.
         </div>

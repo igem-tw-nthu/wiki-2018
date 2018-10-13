@@ -55,8 +55,8 @@ const  Application =
         <div className='part'>
             <div>
                 In order to prove our ACE can be used in reality to solve the problems in our society, we make a collaboration with the “Fisheries Research Institute” of the Taiwan government. They kindly provided us with their “Multiple-Vibrio Detecting Kit, MV-kit” and we integrated their MV-kit with our system to develop a brand-new 
+                <a href="http://2018.igem.org/Team:NTHU_Taiwan/Application"> Automatic Vibrio-detecting System</a>.
             </div>
-            <a href="http://2018.igem.org/Team:NTHU_Taiwan/Application"> Automatic Vibrio-detecting System</a>.
         </div>
         <div className='part'>
             <div>Through the optimization of ACE, we accelerate the detection rate of MV-kit. With our ACE, it becomes 2.5 times faster than the original MV-kit and the minimal detectable Vibrio concentration is about 100 CFU/ mL within 20 hours. In summary, we combine the traditional detecting methods with the cutting-edge technology to achieve a better effect. In addition, following with our IoT system makes the water quality testing system in aquatic agriculture industry step forward to the whole new world of “intelligent aquaculture”.</div>

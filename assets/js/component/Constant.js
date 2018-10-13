@@ -120,9 +120,18 @@ if(process.env.NODE_ENV === 'development'){
       Education_Ministry: '../assets/images/team/sponsor/Ministry of Education.png', 
       NTHU: '../assets/images/team/sponsor/NTHU.png',
       NTHUEE: '../assets/images/team/sponsor/NTHUEE.png',
-
     },
 
+    interview: {
+      research: '../assets/images/hp/interview/research.png',
+      eco_1: '../assets/images/hp/interview/eco.1.png',
+      eco_2: '../assets/images/hp/interview/eco.2.png',
+      tradition_1: '../assets/images/hp/interview/tradition.1.png',
+      tradition_2: '../assets/images/hp/interview/tradition.2.png',
+      tradition_3: '../assets/images/hp/interview/tradition.3.png',
+      aqua_1: '../assets/images/hp/interview/aqua.1.png',
+      aqua_2: '../assets/images/hp/interview/aqua.2.png'
+    },
 
     public: {
       nctu: '../assets/images/hp/public/nctu.png',

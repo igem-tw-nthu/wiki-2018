@@ -159,11 +159,11 @@ const Route =[
 let Link = [
 
     { display:'Project',
-      sublink: ['Description','Design','Demonstration','Contribution']
+      sublink: ['Description','Design','Contribution']
     },
 
     { display: 'Drylab',
-      sublink: ['Drylab-Overview','Platform','Imaging','Sampling','Environment','Software','Application']
+      sublink: ['Drylab-Overview','Platform','Imaging','Sampling','Environment','Software','Application','Demonstration']
     },
 
     { display: 'Wetlab',

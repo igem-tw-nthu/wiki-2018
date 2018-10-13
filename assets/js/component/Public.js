@@ -81,23 +81,23 @@ const Trans =
             <div className='part'>
                 <div>After the discussion, we sorted out the most common questions from our listeners as below:</div>
                 <div>
-                    <div className='innerpart'>1. What is the principle of MV-kit and what’s its difference between PCR analysis?</div>
-                    <div className='innerpart'>2.	Biosafety such as being eaten by people and genetic mutation of E.coli.</div>
-                    <div className='innerpart'>3.	Will engineered genes exchange with bacterial organisms in the environment, causing genetic recombination problems because of the complex environment?</div>
-                    <div className='innerpart'>4.	E.coli residual problems.</div>
-                    <div className='innerpart'>5.	Is engineered E.coli regulation acceptable? GMO products in Taiwan are still very opposed, how to persuade?</div>
-                    <div className='innerpart'>6.	The growth and decline effect of E. coli will still have resistance problems in the future. Is there any solution?</div>
+                    <div>1. What is the principle of MV-kit and what’s its difference between PCR analysis?</div>
+                    <div>2.	Biosafety such as being eaten by people and genetic mutation of E.coli.</div>
+                    <div>3.	Will engineered genes exchange with bacterial organisms in the environment, causing genetic recombination problems because of the complex environment?</div>
+                    <div>4.	E.coli residual problems.</div>
+                    <div>5.	Is engineered E.coli regulation acceptable? GMO products in Taiwan are still very opposed, how to persuade?</div>
+                    <div>6.	The growth and decline effect of E. coli will still have resistance problems in the future. Is there any solution?</div>
                 </div>
             </div>
             
             <div className='part'>
             <div>And we also got some feedback and advice:</div>
             <div>
-                <div className='innerpart'>1.	The mechanism of STAR/anti-STAR can also be applied to the sterilization of intensive care units.</div>
-                <div className='innerpart'>2.	We could transform our target to a smaller range to simplify our problem, such as moving our environment from outdoor to indoor.</div>
-                <div className='innerpart'>3.	In the future, if our growth and decline mechanism success, we could experiment our genes by intelligent shrimp culturing.</div>
-                <div className='innerpart'>4.	To solve the problem of drug resistance, try adding multiple attack lines to E. coli.</div>
-                <div className='innerpart'>5.	A company called ID Water which major in water quality testing suggested us to cooperate with them and tried to start an undertaking.</div>
+                <div>1.	The mechanism of STAR/anti-STAR can also be applied to the sterilization of intensive care units.</div>
+                <div>2.	We could transform our target to a smaller range to simplify our problem, such as moving our environment from outdoor to indoor.</div>
+                <div>3.	In the future, if our growth and decline mechanism success, we could experiment our genes by intelligent shrimp culturing.</div>
+                <div>4.	To solve the problem of drug resistance, try adding multiple attack lines to E. coli.</div>
+                <div>5.	A company called ID Water which major in water quality testing suggested us to cooperate with them and tried to start an undertaking.</div>
             </div>
             </div>
 
@@ -146,7 +146,7 @@ const XGEM =
 const Data = {
     viewbar:{
         Title: 'Public',
-        Subtitle: 'A method to great brainwashing',
+        Subtitle: 'Meetups, conferences, and online platform',
         image: Constant.image.topfull.public
     },
     content:{

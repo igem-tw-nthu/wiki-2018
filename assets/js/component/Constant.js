@@ -40,6 +40,11 @@ if(process.env.NODE_ENV === 'development'){
       ahl: '../assets/images/wetlab/overview/ahl.png',
     },
 
+    drylab_overview: {
+      plate: '../assets/images/drylab/overview/plate.png',
+      box: '../assets/images/drylab/overview/box.png'
+    },
+
     software:{
       app: '../assets/images/drylab/software/app.png',
       line: '../assets/images/drylab/software/line.png',
@@ -74,7 +79,20 @@ if(process.env.NODE_ENV === 'development'){
       block: '../assets/images/drylab/platform/block.png'
     },
 
+    application:{
+      tcbs: '../assets/images/drylab/application/tcbs.png',
+      plate: '../assets/images/drylab/application/plate.png',
+      concentration:  '../assets/images/drylab/application/concentration.png',
+      time: '../assets/images/drylab/application/time.png',
+      
+      flow:  '../assets/images/drylab/application/flow.png',
+      stp: '../assets/images/drylab/application/stp.png',
+      vs: '../assets/images/drylab/application/vs.png',
+
+    },
+
     topfull:{
+      application: '../assets/images/topfull/application.top.png',
       description: '../assets/images/topfull/description.top.png',
       design: '../assets/images/topfull/design.top.png',
       parts: '../assets/images/topfull/parts.top.png',
@@ -92,7 +110,8 @@ if(process.env.NODE_ENV === 'development'){
       interview: '../assets/images/topfull/interview.top.png',
       interlab: '../assets/images/topfull/interLab.top.png',
       experiment: '../assets/images/topfull/experiment.top.png',
-      wetlab_overview: '../assets/images/topfull/wetlab_overview.top.png'
+      wetlab_overview: '../assets/images/topfull/wetlab_overview.top.png',
+      drylab_overview: '../assets/images/topfull/drylab_overview.top.png'
     },
 
     member:{

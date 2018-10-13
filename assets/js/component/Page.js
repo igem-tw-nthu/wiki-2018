@@ -92,7 +92,7 @@ const Route =[
     },
 
     // Drylab
-    { path: base+'/Drylab-Overview',
+    { path: base+'/Drylab-wOverview',
       main: <DrylabOverview name='Overview'/>
     },
     { path: base+'/Platform',

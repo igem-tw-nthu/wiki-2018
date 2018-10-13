@@ -45,13 +45,13 @@ const Solution =
 const Reference =   
     <div>
         <div className='innerpart'>
-        Ching-Ying Deng, Meei-Mei Chen, Ju-Hsien Peng, Yu-Chiao Yang, Chih-Chien Chang, Hui-Ping Tsai (2014) The Investigation on the Infection of Francisellosis in Farmed Tilapia in Taoyuan and Hsinchu Areas. Journal of Taiwan Fisheries Research,22 (1): 81-91
+        1. Ching-Ying Deng, Meei-Mei Chen, Ju-Hsien Peng, Yu-Chiao Yang, Chih-Chien Chang, Hui-Ping Tsai (2014) The Investigation on the Infection of Francisellosis in Farmed Tilapia in Taoyuan and Hsinchu Areas. Journal of Taiwan Fisheries Research,22 (1): 81-91
         </div>
         <div className='innerpart'>
-        C. Y. Chang, et al. (2016) Screening Bacteria Antagonistic toward Aquatic Pathogenic Vibrio spp. from Marine Fishes and Shrimp. Journal of Taiwan Fisheries Research, 24 (1): 37-50
+        2. C. Y. Chang, et al. (2016) Screening Bacteria Antagonistic toward Aquatic Pathogenic Vibrio spp. from Marine Fishes and Shrimp. Journal of Taiwan Fisheries Research, 24 (1): 37-50
         </div>
         <div className='innerpart'>
-        H. C. Chu, et al. (2011) Development of Multiple Vibrio Detecting Kit. Special Report from Fisheries Research Institute. 034, 36-39
+        3. H. C. Chu, et al. (2011) Development of Multiple Vibrio Detecting Kit. Special Report from Fisheries Research Institute. 034, 36-39
         </div>
     </div>
 

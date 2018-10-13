@@ -38,7 +38,7 @@ const HeaderWrapper = styled.div`
     `
 
 const Icon = styled.img`
-    height: 80px;
+    height: 70px;
     padding: 5px;
     position: absolute;
     top: 20px;

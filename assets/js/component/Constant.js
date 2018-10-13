@@ -60,6 +60,14 @@ if(process.env.NODE_ENV === 'development'){
       list: '../assets/images/drylab/sampling/list.png'
     },
 
+    environment:{
+      first: '../assets/images/drylab/environment/first.png',
+      second: '../assets/images/drylab/environment/second.png',
+      final: '../assets/images/drylab/environment/final.png',
+      list: '../assets/images/drylab/environment/list.png',
+      end: '../assets/images/drylab/environment/end.png'
+    },
+
     platform: {
       transparent: '../assets/images/drylab/platform/transparent.png',
       moving: '../assets/images/drylab/platform/moving.png',
@@ -72,6 +80,7 @@ if(process.env.NODE_ENV === 'development'){
       parts: '../assets/images/topfull/parts.top.png',
       protocol: '../assets/images/topfull/protocol.top.png',
       imaging: '../assets/images/topfull/imaging.top.png',
+      environment: '../assets/images/topfull/environment.top.png',
       member: '../assets/images/topfull/member.top.png',
       public: '../assets/images/topfull/public.top.png',
       attribution: '',

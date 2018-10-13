@@ -15,16 +15,15 @@ const Calibration =
     <div>
         <div>
             <div className='part'>
-                <div>1. OD 600 Reference point</div>
-                <div>LUDOX CL-X (45% colloidal silica suspension) is used as a single point reference to obtain a conversion factor to transform absorbance (Abs600) data from our plate reader into a comparable OD600 measurement as would be obtained in a spectrophotometer.</div>
-                <div>We will get the data for OD600 of the H2O and LUDOX. The corrected Abs600 is calculated by subtracting the H2O reading. To convert measured Abs600 to OD600 is to let Reference OD600 divided by Abs600.</div>
+                <div className='part-title'>1. OD 600 Reference point</div>
+                <div>LUDOX CL-X (45% colloidal silica suspension) is used as a single point reference to obtain a conversion factor to transform absorbance (Abs600) data from our plate reader into a comparable OD600 measurement as would be obtained in a spectrophotometer. We will get the data for OD600 of the H2O and LUDOX. The corrected Abs600 is calculated by subtracting the H2O reading. To convert measured Abs600 to OD600 is to let Reference OD600 divided by Abs600.</div>
             </div>
             <div className='part'>
-                <div>2. Particle Standard Curve</div>
+                <div className='part-title'>2. Particle Standard Curve</div>
                 <div>We prepared a dilution series of monodisperse silica microspheres and measured the Abs600 in a plate reader. The size and optical characteristics of these microspheres are similar to cells, and there was a known amount of particles per volume. This measurement allows us to construct a standard curve of particle concentration which can be used to convert Abs600 measurements to an estimated number of cells.</div>
             </div>
             <div className='part'>
-                <div>3. Fluorescence standard curve</div>
+                <div className='part-title'>3. Fluorescence standard curve</div>
                 <div>Absolute fluorescence values cannot be directly compared from one instrument to another. In order to compare the fluorescence output of test devices between teams, it was necessary to create a standard fluorescence curve.</div>
             </div>
         </div>

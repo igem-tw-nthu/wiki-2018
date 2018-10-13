@@ -40,6 +40,13 @@ if(process.env.NODE_ENV === 'development'){
       ahl: '../assets/images/wetlab/overview/ahl.png',
     },
 
+    software:{
+      app: '../assets/images/drylab/software/app.png',
+      line: '../assets/images/drylab/software/line.png',
+      map: '../assets/images/drylab/software/map.png',
+      warn:  '../assets/images/drylab/software/warn.png'
+    },
+
     imaging:{
       materials: '../assets/images/drylab/imaging/materials.png',
       board: '../assets/images/drylab/imaging/boards.png',

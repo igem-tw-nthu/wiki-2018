@@ -6,13 +6,13 @@ const Url ={
 }
 
 
-let Image, Download, Video
+let Image, Video
 if(process.env.NODE_ENV === 'development'){
   // developement
 
-  Download = {
-    education: {}
-  }
+  Video = {
+    sampling: '../assets/video/sampling.mp4'
+  },
 
   Image = {
 
@@ -45,6 +45,12 @@ if(process.env.NODE_ENV === 'development'){
       board: '../assets/images/drylab/imaging/boards.png',
       algorithm : '../assets/images/drylab/imaging/algorithm.png',
       light: '../assets/images/drylab/imaging/light.png',
+    },
+
+    sampling:{
+      pump: '../assets/images/drylab/sampling/pump.png',
+      full_pump: '../assets/images/drylab/sampling/full_pump.png',
+      list: '../assets/images/drylab/sampling/list.png'
     },
 
     platform: {
@@ -155,6 +161,9 @@ if(process.env.NODE_ENV === 'development'){
   }
 }else{
   // production
+
+  Video = {}
+
   Image = {
     icon:{
       team: 'http://2018.igem.org/wiki/images/1/1f/T--NTHU_Taiwan--2018_team.png',
@@ -243,7 +252,7 @@ const Color ={
 
 export default {
     image: Image,
-    download: Download,
+    video: Video,
     url: Url,
     color: Color
 }

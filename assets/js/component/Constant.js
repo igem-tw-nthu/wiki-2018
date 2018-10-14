@@ -30,16 +30,23 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     design: {
+      cycle: '../assets/images/project/design/cycle.png',
       exp : '../assets/images/project/design/exp.png',
       equlibrium : '../assets/images/project/design/equi.png',
       secrete: '../assets/images/project/design/secrete.png',
-      system: '../assets/images/project/design/system.png'
+      system: '../assets/images/project/design/system.png',
+      shrimp: '../assets/images/project/design/shrimp.png'
     },
 
     wetlab_overview: {
-      introduction: '../assets/images/wetlab/overview/introduction.png',
+      system: '../assets/images/wetlab/overview/system.png',
       mechanism: '../assets/images/wetlab/overview/mechanism.png',
       ahl: '../assets/images/wetlab/overview/ahl.png',
+      detection: '../assets/images/wetlab/overview/detection.png',
+      lacl: '../assets/images/wetlab/overview/lacl.png',
+      riboswitch: '../assets/images/wetlab/overview/riboswitch.png',
+      star: '../assets/images/wetlab/overview/star.png',
+      anti: '../assets/images/wetlab/overview/anti.png'
     },
 
     experiment: {
@@ -53,7 +60,16 @@ if(process.env.NODE_ENV === 'development'){
       cycle: '../assets/images/wetlab/experiment/cycle.png',
       sensor: '../assets/images/wetlab/experiment/sensor.png',
       exp_1 : '../assets/images/wetlab/experiment/exp.1.png',
-      data_1: '../assets/images/wetlab/experiment/data.1.png'
+      data_1: '../assets/images/wetlab/experiment/data.1.png',
+      table_2: '../assets/images/wetlab/experiment/table.2.png',
+      table_3: '../assets/images/wetlab/experiment/table.3.png',
+      table_4: '../assets/images/wetlab/experiment/table.4.png',
+      result_2: '../assets/images/wetlab/experiment/result.2.png',
+      result_3: '../assets/images/wetlab/experiment/result.3.png',
+      tsrna: '../assets/images/wetlab/experiment/tsrna.png',
+      tsrna_test: '../assets/images/wetlab/experiment/tsrna_test.png',
+      strength: '../assets/images/wetlab/experiment/strength.png',
+      email: '../assets/images/wetlab/experiment/email.png' 
     },
 
     drylab_overview: {

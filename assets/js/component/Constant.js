@@ -40,6 +40,20 @@ if(process.env.NODE_ENV === 'development'){
       ahl: '../assets/images/wetlab/overview/ahl.png',
     },
 
+    experiment: {
+      transform: '../assets/images/wetlab/experiment/transform.png',
+      elec : '../assets/images/wetlab/experiment/elec.png',
+      table_1: '../assets/images/wetlab/experiment/table.1.png',
+      sample: '../assets/images/wetlab/experiment/sample.png',
+      vibrio: '../assets/images/wetlab/experiment/vibrio.png',
+      ahl: '../assets/images/wetlab/experiment/ahl.png',
+      structure: '../assets/images/wetlab/experiment/structure.png',
+      cycle: '../assets/images/wetlab/experiment/cycle.png',
+      sensor: '../assets/images/wetlab/experiment/sensor.png',
+      exp_1 : '../assets/images/wetlab/experiment/exp.1.png',
+      data_1: '../assets/images/wetlab/experiment/data.1.png'
+    },
+
     drylab_overview: {
       plate: '../assets/images/drylab/overview/plate.png',
       box: '../assets/images/drylab/overview/box.png'
@@ -104,7 +118,7 @@ if(process.env.NODE_ENV === 'development'){
       attribution: '',
 
       sponsor: '../assets/images/topfull/sponsor.top.png',
-      
+      software: '../assets/images/topfull/software.top.png',
       education: '../assets/images/topfull/education.top.png',
       collaboration : '../assets/images/topfull/collaboration.top.png',
       interview: '../assets/images/topfull/interview.top.png',
@@ -197,14 +211,13 @@ if(process.env.NODE_ENV === 'development'){
       pie_3: '../assets/images/hp/education/pie.3.png',
       group: '../assets/images/hp/education/group.png'
     },
-
-   
-
-  
-
   }
 }else{
   // production
+
+
+
+  
 
   Video = {}
 

@@ -57,7 +57,9 @@ const CFU =
     </div>
 
 const Download=
-    <div></div>
+    <div>
+        Detail of the interlab experiment on <a href='https://drive.google.com/file/d/1ckLe66tEv3bbxnEU4JwRetVj-YGy4wxQ/view?usp=sharing'>Google Drive</a>
+    </div>
 
 const Data = {
     viewbar: {

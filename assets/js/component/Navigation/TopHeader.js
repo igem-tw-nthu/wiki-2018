@@ -45,7 +45,7 @@ const Arrow = styled.div`
 const Toggle = styled.div`
     position: absolute;
     margin: 10px 0px;
-    width: 150px;
+    width: 160px;
     padding: 0px 0px 3px 8px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;

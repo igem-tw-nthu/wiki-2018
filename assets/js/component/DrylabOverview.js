@@ -76,9 +76,6 @@ const Download =
         <div>
         3D printing files on <a href="https://drive.google.com/drive/folders/1tPQEVtNHB_hzhalPlwZu4bzyQVSDUPkN?usp=sharing">Google Drive</a>
         </div>
-        <div>
-        Source Code on <a href="">Github</a>
-        </div>
     </div>
 
 

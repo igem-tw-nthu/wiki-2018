@@ -58,6 +58,7 @@ p{
     font-size: 25px;
     margin-bottom: 15px;
     color: steelblue;
+    font-weight: 600;
 }
 
 .innerpart{
@@ -65,7 +66,7 @@ p{
 }
 
 .illustration{
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .illust-image-wrapper{

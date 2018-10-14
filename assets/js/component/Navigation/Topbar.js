@@ -13,7 +13,8 @@ import Page from '../Page';
 const Wrapper = styled.div`
     position: fixed;
     display: flex;
-    top: 0px;
+    /* for igem ugly black topbar */
+    top: 15px;
     align-items: center;
     height: 70px;
     min-width:fit-content;

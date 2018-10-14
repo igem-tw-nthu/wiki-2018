@@ -92,7 +92,7 @@ const Route =[
     },
 
     // Drylab
-    { path: base+'/Drylab-wOverview',
+    { path: base+'/Drylab-Overview',
       main: <DrylabOverview name='Overview'/>
     },
     { path: base+'/Platform',
@@ -147,7 +147,7 @@ const Route =[
     { path: base+'/Interview',
       main: <Interview name='Interview'/>
     },
-    { path: base+'/Public',
+    { path: base+'/Public_Engagement',
       main: <Public name='Public'/>,
     },
     { path: base+'/Collaboration',
@@ -171,7 +171,7 @@ let Link = [
     },
 
     { display: 'Human Practice',
-      sublink: [ 'Education','Public','Interview','Collaboration', 'Gold']
+      sublink: [ 'Education','Public_Engagement','Interview','Collaboration', 'Gold']
     },
     { display: 'Team',
       sublink: ['Member','Sponsor','Attribution'] 

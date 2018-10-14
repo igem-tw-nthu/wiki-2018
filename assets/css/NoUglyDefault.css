@@ -19,6 +19,7 @@ a{
     padding: initial;
     text-decoration: none;
     color: steelblue;
+    font-weight: 600;
 }
 
 p{
@@ -66,7 +67,7 @@ p{
 }
 
 .illustration{
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .illust-image-wrapper{
@@ -77,7 +78,6 @@ p{
 
 .illust-image{
     width: 100%;
-    background-color: whitesmoke;
 }
 
 

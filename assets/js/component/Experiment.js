@@ -45,7 +45,9 @@ const Testing =
                 </div>
             <div className='illustration'>
                 <img className='illust-image' style={{backgroundColor:'transparent'}} src={Constant.image.experiment.vibrio}/>
-                <div className='undertext'>Fig. 4: The schematic of our gene circuits</div>                
+                <div className='undertext'>Fig.4 : Testing Sample from fish farm on TCBS</div>
+                <div className='undertext'>Right plate shows Vibrio harveyi and the left pate shows Vibrio Cholerae</div>
+                                
             </div>
         </div>
     </div>

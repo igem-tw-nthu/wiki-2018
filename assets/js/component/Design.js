@@ -37,6 +37,16 @@ const Introduction =
     </div>
 
 
+const Hardware =
+    <div>
+        <div className='part'>ACE is an abbreviation of “Automatic Color-detecting Examiner” which is able to provide a stable environment for any color-changing-related test. All of the processes are executed and the information of each color will be digitized automatically. Finally, we create our own database to store the data and analyze them more precisely. Combining with IoT technology, all of our data will be recorded and analyzed in our cloud database and be returned to our clients, which allows them to take control of the results.</div>
+        <div className='part'>In order to prove our ACE can be used in reality to solve the Vibrio problem in our society, we make a collaboration with the “Fisheries Research Institute” of the Taiwan government. We integrated their MV-kit with our system to develop a brand-new <a href='http://2018.igem.org/Team:NTHU_Taiwan/Application'>Automatic Vibrio-detecting System</a>
+        </div>
+        <div className='illustration'>
+            <img className='illust-image' src={Constant.image.design.system}/>
+        </div>
+    </div>
+
 const Data = {
     viewbar:{
         Title: 'Design',
@@ -45,7 +55,10 @@ const Data = {
     },
     content:{
         parts:[
-            { Description: Introduction }
+            { Description: Introduction },
+            { Title: 'Hardware',
+              Description: Hardware
+            }
         ]
     }
 }

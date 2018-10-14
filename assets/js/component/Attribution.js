@@ -8,43 +8,37 @@ const SpThanks =
     <div>
         <div className='part'>
           
-            <div className='innerpart'>
-                <div >Prof. Ya-Tang Yang</div>
+            <div className='part'>        
                 <div>
                 Prof. Yang kindly provided the laboratory for us to do our wet lab experiment. In addition, he gave us lots of suggestions about modeling and hardware.
                 </div>
             </div>
 
-            <div className='innerpart'>
-                <div classNane='part-title'>Prof. Chao-Min Cheng</div>
+            <div className='part'>
                 <div>
                     Prof. Cheng provided us some advice about our presentation and take care of all of us in Boston.
                 </div>
             </div>
 
-            <div className='innerpart'>
-                <div >Prof. Yu-Chun Lin</div>
+            <div className='part'>
                 <div>
                     Prof. Lin provided his experimental materials for us to do our experiments. Moreover, he gave us a lot of helpful suggestions about molecular biology experiment.
                 </div>
             </div>
 
-            <div className='innerpart'>
-                <div >Dr. Chin-I Chang</div>
+            <div className='part'>
                 <div>
                     Dr. Chang generously provided us the “Multiple-Vibrio detecting kit, MV-kit” for our dry lab to integrate their hardware. Also, he gave us some suggestions about Vibrio culture.
                 </div>
             </div>
 
-            <div className='innerpart'>
-                <div >Dr. Jimmy Kuo</div>
+            <div className='part'>
                 <div>
                     Dr. Kuo is a researcher of the national museum of marine biology and aquarium, who shared us with his research on Vibrio and some knowledge related to Vibrio. Also, he gave us some suggestions about our hardware design.
                 </div>
             </div>
 
-            <div className='innerpart'>
-                <div >Dr. Ming-An Tsai</div>
+            <div className='part'>
                 <div>
                     Dr. Tsai, who is also a researcher of the national museum of marine biology and aquarium. He kindly reminded us that our killing system must not eliminate all Vibrio in the water. Besides, he gave us a crucial reference of the infectious Vibrio concentration in the water which is useful for our wet lab experiments.
                 </div>

@@ -11,7 +11,8 @@ if(process.env.NODE_ENV === 'development'){
   // developement
 
   Video = {
-    sampling: '../assets/video/sampling.mp4'
+    sampling: '../assets/video/sampling.mp4',
+    lid: '../assets/video/lid.mp4'
   },
 
   Image = {
@@ -31,7 +32,8 @@ if(process.env.NODE_ENV === 'development'){
     design: {
       exp : '../assets/images/project/design/exp.png',
       equlibrium : '../assets/images/project/design/equi.png',
-      secrete: '../assets/images/project/design/secrete.png'
+      secrete: '../assets/images/project/design/secrete.png',
+      system: '../assets/images/project/design/system.png'
     },
 
     wetlab_overview: {
@@ -76,7 +78,9 @@ if(process.env.NODE_ENV === 'development'){
     sampling:{
       pump: '../assets/images/drylab/sampling/pump.png',
       full_pump: '../assets/images/drylab/sampling/full_pump.png',
-      list: '../assets/images/drylab/sampling/list.png'
+      list: '../assets/images/drylab/sampling/list.png',
+      head: '../assets/images/drylab/sampling/head.png',
+      result: '../assets/images/drylab/sampling/result.png'
     },
 
     environment:{
@@ -115,17 +119,19 @@ if(process.env.NODE_ENV === 'development'){
       environment: '../assets/images/topfull/environment.top.png',
       member: '../assets/images/topfull/member.top.png',
       public: '../assets/images/topfull/public.top.png',
-      attribution: '',
-
+      attribution: '../assets/images/topfull/attribution.top.png',
+      sampling: '../assets/images/topfull/sampling.top.png',
+      platform: '../assets/images/topfull/platform.top.png',
       sponsor: '../assets/images/topfull/sponsor.top.png',
       software: '../assets/images/topfull/software.top.png',
       education: '../assets/images/topfull/education.top.png',
       collaboration : '../assets/images/topfull/collaboration.top.png',
       interview: '../assets/images/topfull/interview.top.png',
-      interlab: '../assets/images/topfull/interLab.top.png',
+      contribution: '../assets/images/topfull/contribution.top.png',
       experiment: '../assets/images/topfull/experiment.top.png',
       wetlab_overview: '../assets/images/topfull/wetlab_overview.top.png',
-      drylab_overview: '../assets/images/topfull/drylab_overview.top.png'
+      drylab_overview: '../assets/images/topfull/drylab_overview.top.png',
+      demonstration: '../assets/images/topfull/demonstration.top.png'
     },
 
     member:{

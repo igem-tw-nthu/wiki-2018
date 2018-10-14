@@ -8,10 +8,6 @@ import { inject, observer } from 'mobx-react';
 
 
 
-const Wrapper = styled.div`    
-    `
-
-
 const Subtitle = 
     <div>
         <div>Summer synthetic biology camp</div>

@@ -39,7 +39,7 @@ const Measurement =
                 <div>Test Device 1   BBa_J364000  Kit Plate 7 Well 2F</div>
                 <div>Test Device 2   BBa_J364001  Kit Plate 7 Well 2H</div>
                 <div>Test Device 3   BBa_J364002  Kit Plate 7 Well 2J</div>
-                <div>Test Device 4      BBa_J364007  Kit Plate 7 Well 2L</div>
+                <div>Test Device 4   BBa_J364007  Kit Plate 7 Well 2L</div>
                 <div>Test Device 5      BBa_J364008  Kit Plate 7 Well 2N</div>
                 <div>Test Device 6      BBa_J364009  Kit Plate 7 Well 2P</div>
             </div>
@@ -65,7 +65,7 @@ const Data = {
     viewbar: {
         Title: 'Contribution',
         Subtitle: `Join the iGEM's fifth interlab Study`,
-        image: Constant.image.topfull.interlab
+        image: Constant.image.topfull.contribution
     },
     content:{
         Introduction: Introduction,

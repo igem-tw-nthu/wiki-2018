@@ -51,19 +51,19 @@ const Advantage =
         </div>
 
         <div className='part'>
-            <div>1. Accuracy</div>
+            <div className='part-title'>1. Accuracy</div>
             <div className='innerpart'>
                 Because our 24 samples are close to each other, the accuracy is necessary to avoid the wrong result of analysis. With image detection, we can set the section where we want to analyze corresponding to the samples on the picture. Therefore, if all samples are located in advance carefully, we can get high accuracy for the results.
             </div>
         </div>
         <div className='part'>
-            <div>2.	Automation</div>
+            <div className='part-title'>2.	Automation</div>
             <div className='innerpart'>
                 Automation is our goal of designing the device. To achieve this, the program can automatically do the following things, i.e., capturing the scene, analyzing the captured image, recording the results, and sending the warning messages to users. With the four steps as mentioned above operated cyclically, the program achieves automation.
             </div>
         </div>
         <div className='part'>
-            <div>3.	Flexibility</div>
+            <div className='part-title'>3.	Flexibility</div>
             <div className='innerpart'>
                 The section program analyzes on the captured image can be modified whenever the captured one is changed. Therefore, we don’t have to fix the position of all samples. Due to this advantage, any type of sample can be analyzed accurately.
             </div>
@@ -77,13 +77,13 @@ const Problem =
         During the development of image detection, we had made some choices to solve many problems, including the specific practice of detection, development board, the algorithm to analyze the images, and the environment light. The following describes each problem, and the reasons why we made these choices. 
         </div>
         <div className='part'>
-            <div>1.	Image detection vs. Color sensor</div>
+            <div className='part-title'>1.	Image detection vs. Color sensor</div>
             <div className='innerpart'>
                 Initially, color sensor is our direction to design the device. Moving the color sensor to the top of each sample can get the color of that. However, our samples are close to each other, and the resolution of a color sensor is not high enough to detect the color of single sample accurately, so the direction is changed to image detection with the camera capturing the scene. In this way, it analyzes the image directly, the accuracy increases by a large margin.
             </div>
         </div>
         <div className='part'>
-            <div>2.	Raspberry Pi vs. Other development boards</div>
+            <div className='part-title'>2.	Raspberry Pi vs. Other development boards</div>
             <div className='innerpart'>
                 <div className='illustration'>
                     <img className='illust-image' src={Constant.image.imaging.board}/>
@@ -92,7 +92,7 @@ const Problem =
             </div>
         </div>
         <div className='part'>
-            <div>3.	Simplified location vs. Houghcircles</div>
+            <div className='part-title'>3.	Simplified location vs. Houghcircles</div>
             <div className='innerpart'>
                 <div className='illustration'>
                     <img className='illust-image' src={Constant.image.imaging.algorithm}/>

@@ -18,13 +18,16 @@ const Pumps =
 
             <div>
                 <div className='innerpart'>
-                1. Accurate metering - peristaltic pumps use flexible tubing to run through rollers in the pump head. As fluid goes through the pump head, packet of fluids can be formed. Simply by determining the size of the tubing and the speed of the roller turning in the pump head, the accurate metering of the media can be achieved.
+                <div className='part-title'>1. Accurate metering </div>
+                <div>peristaltic pumps use flexible tubing to run through rollers in the pump head. As fluid goes through the pump head, packet of fluids can be formed. Simply by determining the size of the tubing and the speed of the roller turning in the pump head, the accurate metering of the media can be achieved.</div>
                 </div>
                 <div className='innerpart'>
-                2. Self priming - peristaltic pumps can draw fluid into the tubing when starting dry while other pumps require user to fill pump and suction line with fluid before use which can be inconvenient and also create potential for contamination.
+                <div className='part-title'>2. Self priming </div>
+                <div>peristaltic pumps can draw fluid into the tubing when starting dry while other pumps require user to fill pump and suction line with fluid before use which can be inconvenient and also create potential for contamination.</div>
                 </div>
                 <div className='innerpart'>
-                3. Non-siphoning - a peristaltic pump is non-siphoning which means that it prevents back flow into the system when the pump stop turning. This promotes accuracy during dispensing.
+                <div className='part-title'>3. Non-siphoning </div>
+                <div>a peristaltic pump is non-siphoning which means that it prevents back flow into the system when the pump stop turning. This promotes accuracy during dispensing.</div>
                 </div>
             </div>
         </div>
@@ -93,7 +96,7 @@ const Pumps =
             <div>
                 <div> 
                     <MathJax.Provider>
-                        <MathJax.Node formula={"flow \\ rate (μl/s) = V \\cdot L \\cdot N \\cdot RPM \\cdot10^3 \\cdot 60"}/>
+                        <MathJax.Node inline formula={"flowrate (μl/s) = V \\cdot L \\cdot N \\cdot RPM \\cdot10^3 \\cdot 60"}/>
                     </MathJax.Provider>
                 </div>
                 <div>V= Volume of occluded tubing (mm^3/mm)</div>
@@ -114,6 +117,21 @@ const Pumps =
               <div className='undertext'>Figure 3</div>
           </div>
         </div>
+
+        <div className='part' style={{display:'flex',alignItems:'center'}}>
+            <div  style={{marginRight:'auto',padding:'0px 30px'}}>
+                <img style={{height:'180px'}} src={Constant.image.sampling.head}/>
+                <div className='undertext'>Figure 4</div>
+            </div>
+            <div>Although we can almost get the precise amount of sample each time, it’s still hard to control the later droplets from dropping down cause of the gravity. Hence, we combine the pipette tip (Figure 4) at the end of the silicon tube to reduce the diameter and slow down the flowing rate. In addition, we also design the special lid with slopes in between to cover on the 96-well plate. We can utilize the slope design not only to drop the first few droplets that might be contaminated by the previous sample but also use them as the tunnels to collect the waste sample and remove all of them after the whole examination is done.</div>
+        </div>
+
+        <div className='illustration'>
+            <video className='illust-image' autoPlay loop>
+                <source src={Constant.video.lid} type="video/mp4"/>
+            </video>
+          </div>
+
     </div>
 
 const Axis = 
@@ -136,9 +154,19 @@ const Discuss =
     </div>
 
 
+const Result =
+    <div>
+        <div className='illustration'>
+            <img className='illust-image' src={Constant.image.sampling.result}/>
+        </div>
+    </div>
+
+    
+
+
 const Download =
     <div>
-        You can download the STL and anrdion code on <a href=''>Github</a>
+        You can download the STL and anrdion code on <a href='https://github.com/igem-tw-nthu/Peristaltic-pumps-2018'>Github</a>
     </div>
 
 const Reference =
@@ -155,7 +183,8 @@ const Data = {
     viewbar: {
         Title: 'Sampling',
         Subtitle: 'Auto sampling with peristaltic pump ',
-        image: Constant.image.topfull.sampling
+        image: Constant.image.topfull.sampling,
+        Underimage: 'reference: http://keni.candlecomfortzone.com water-samples '
     },
     content: {
         Introduction: `In our device, in order to let the following detected process work out properly, we first set up the automated sampling mechanism. We want to collect the sample out of the pool or the fish farm that we’re target at to get the real-time monitoring of the water condition, and here we only focus on the number of vibrio in our project.`,
@@ -168,6 +197,9 @@ const Data = {
             },
             {  Title: 'Discussion',
                Description: Discuss
+            },
+            {  Title: 'Result',
+               Description: Result
             },
             { Title: 'File download',
               Description: Download

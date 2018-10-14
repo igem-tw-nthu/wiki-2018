@@ -11,16 +11,17 @@ const Introduction =
             <a href='http://2018.igem.org/Description'> Description</a>.
         </div>
 
-        <div className='innerpart'>
+        <div className='part'>
             
             <div>Nowadays, there are three possible scenarios for aquatic agriculture to face pathogenic Vibrio:</div>
-
-            <div>1. The infection of Vibrio is usually happening all of a sudden. So when fisherman aware of the infection, it often causes significant damage.</div>
-            <div>2. The conventional Vibrio testing method is time-consuming and manpower-consuming.</div>
-            <div>3. The current water quality testing equipment is mainly focusing on the physical and chemical index, there are no devices for testing bacteria</div>
+            <div className='innerpart'>
+                <div>1. The infection of Vibrio is usually happening all of a sudden. So when fisherman aware of the infection, it often causes significant damage.</div>
+                <div>2. The conventional Vibrio testing method is time-consuming and manpower-consuming.</div>
+                <div>3. The current water quality testing equipment is mainly focusing on the physical and chemical index, there are no devices for testing bacteria</div>
+            </div>
         </div>
 
-        <div className='innerpart'>
+        <div className='part'>
             <div>
                 However, our automatic Vibrio-detecting system is able to solve these problems.
             </div>
@@ -82,22 +83,22 @@ const Commercial=
             <div className='part-title'>1. Segmentation</div>
             <div>
                 <div className='innerpart'>
-                    <div>Merchandises in current market have to face some difficulties:</div>
+                    <div className='part-title'>Merchandises in current market have to face some difficulties:</div>
                     <div>The water quality detecting systems in the current market are merely focusing on the particular physical and chemical indexes in the waters, for example, pH value, redox potential, dissolved oxygen, etc. They determine the water quality by those indexes, however, the change of situation in the water is quite fast and complex. We cannot receive the correct and real-time information of Vibrio in the water. When we aware of the abnormality, the pathogenic Vibrio usually causes the death of fish and shrimps significantly.</div>
                 </div>
 
                 <div className='innerpart'>
-                    <div>Long-term detection with high specificity:</div>
+                    <div className='part-title'>Long-term detection with high specificity:</div>
                     <div>The MV-kit developed by Fisheries Research Institute is able to detect the Vibrio in the water sample quantitatively and with high specificity. Our system can automatically monitor the change of Vibrio concentration over a long period of time. Our clients are able to notice the condition in the early stage of Vibrio growth and adopt the solutions.</div>
                 </div>
 
                 <div className='innerpart'>
-                    <div>A real-time and automatic system:</div>
+                    <div className='part-title'>A real-time and automatic system:</div>
                     <div>Our mechanism design allows the device to collect the sample automatically and continuously. Furthermore, we also program an application which analyzes the Vibrio concentration automatically. Last but not least, we achieve the effect of real-time monitoring and report through IoT technology.</div>
                 </div>
 
                 <div className='innerpart'>
-                    <div>Fast, simple, and low-cost:</div>
+                    <div className='part-title'>Fast, simple, and low-cost:</div>
                     <div>The mechanism of our reaction is the simple color-changing process. Compared to the conventional Vibrio culture methods, our clients haven’t to equipped with the professional skills of bacteria culture, also, the process of testing becomes safer and faster. In comparison with the water quality testing system in the market, our system is low-cost and is able to express the Vibrio concentration directly and accurately.</div>
                 </div>
             </div>
@@ -117,7 +118,7 @@ const Commercial=
                 </div>
                 
                 <div className='innerpart'>
-                    <div>Suppliers of the water quality testing system:</div>
+                    <div className='part-title'>Suppliers of the water quality testing system:</div>
                     <div>Currently, there are several water quality testing system vendors in Taiwan, but there is no any company provides the automatic Vibrio-detecting system. Our device is easy to be integrated with other related systems to reduce the vendors’ research and development cost. In this way, we believe that we can establish a better platform and to create a win-win situation.</div>
                 </div>
             </div>
@@ -128,7 +129,7 @@ const Commercial=
             <div className='part-title'>3. Positioning</div>
             <div>
                 <div className='innerpart'>
-                    <div>Intelligent fishery:</div>
+                    <div className='part-title'>Intelligent fishery:</div>
                     <div>
                         <div>With the advance of science and technology, the IoT popularizes gradually in current society. Besides, the traditional agriculture industries transform into the so-called “agriculture 4.0”. </div>
                         <div>Let’s take an in-depth look at aquatic agriculture in Taiwan. Our country is famous for its aquatic agriculture industry, however, the conventional way is quite time-consuming. Additionally, following with the global warming, the aquatic agriculture faces a huge challenge. In the train of those facts, the industrial population structure becomes imbalance and thus, exerting a crucial impact on the future of industrial development ultimately.</div>
@@ -137,7 +138,7 @@ const Commercial=
                 </div>
 
                 <div className='innerpart'>
-                    <div>Future resolution:</div>
+                    <div className='part-title'>Future resolution:</div>
                     <div>Hopefully, we can create a complete detecting platform for different pathogenic bacteria in the future. With low-cost and high-efficiency, our platform is able to minimize the economic damage result from the bacterial infection.</div>
                 </div>
             </div>
@@ -150,7 +151,7 @@ const Commercial=
 const Data = {
     viewbar: {
         Title: 'Application',
-        Subtitle: '',
+        Subtitle: 'Commercial analysis of our project',
         image: Constant.image.topfull.application
     },
     content: {

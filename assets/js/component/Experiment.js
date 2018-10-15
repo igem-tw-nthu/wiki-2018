@@ -32,7 +32,9 @@ const Testing =
     <div>
         We use TCBS (Thiosulfate-citrate-bile salts-sucrose agar, a type of selective agar culture plate that is used in microbiology laboratories to isolate Vibrio) to examine Vibrio’s concentration in fish farm. Our HP member and wet lab member visit the fish farm in Taiwan, Chiayi. We collected the water sample from different pool, and sent it back to the lab to culture the sample on TCBS.
         <div className='illustration'>
-            <img className='illust-image' src={Constant.image.experiment.sample}/>
+            <div className='illust-image-wrapper' style={{width:'600px'}}>
+                <img className='illust-image' src={Constant.image.experiment.sample}/>
+            </div>
             <div className='undertext'>Fig.3 : Collection sample from traditional fish farm in Taiwan</div>
         </div>
 
@@ -70,7 +72,9 @@ const Detection =
         Our detection system is using Lux system. When the Vibrio density is high, the AHL concentration in the environment is high. Hence, our engineered E. coli can detect the Vibrio density and can release the anti-Vibrio substances. (Fig. 7)
         
         <div className='illustration'>
-            <img className='illust-image' style={{backgroundColor:'transparent'}} src={Constant.image.experiment.cycle}/>
+            <div className='illust-image-wrapper' style={{width:'500px'}}>
+                <img className='illust-image' style={{backgroundColor:'transparent'}} src={Constant.image.experiment.cycle}/>
+            </div>
             <div className='undertext'>Fig. 7: The schematic of our detection system</div>
         </div>
     
@@ -137,8 +141,8 @@ const Detection =
             <div className='part'>
                 <div className='part-title'>a. BBa_2774005 (pLac AHL generator + RFP) co-culturing with BBa_2774000 (AHL sensor)</div>
                 <div className='illustration'>
-                    <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.result_1}/>
-                    <div className='undertext'>AHL sensor with increasing concentration of AHL generator + RFP (from the left tube to the right tube). We centrifuged culture tubes in the left picture to get the ones in the right picture.</div>
+                    <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.exp_2}/>
+                    <div className='undertext'>Fig 11. AHL sensor with increasing concentration of AHL generator + RFP (from the left tube to the right tube). We centrifuged culture tubes in the left picture to get the ones in the right picture.</div>
                 </div>
                 <div className='innerpart'>We co-cultured AHL sensor with increasing concentration of AHL generator + RFP. The picture indicates that AHL was indeed generated. When the two bacteria were mixed together, red and green fluorescence were both emitted and producing different colors.</div>
             </div>
@@ -160,12 +164,20 @@ const Detection =
                 <div className='innerpart'>2.  Culture BBa_2774002 at microcentrifuge tube with (50μL O/N culture with 4950 μL fresh LB).</div>
                 <div className='innerpart'>3. Measure microcentrifuge’s OD600 two hour and meanwhile centrifuge the tube to get supernatant contain AHL. Transfer the OD600 data to bacteria density by using inter lab data.</div>
                 <div className='innerpart'>4. Move 2.5 ml of supernatant contain AHL and 2.5ml fresh LB in new tube, and add AHL sensor simultaneously.</div>
+                <div className='illustration'>
+                    <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.exp_3}/>
+                    <div className='undertext'>Fig 12. The procedure of experiment 3.</div>
+                </div>
             </div>
+
             <div className='part'>
                 <div className='part-title'>Result:</div>
                 <div className='illustration'>
-                    <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.result_3}/>
+                    <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.result_4}/>
+                    <div className='undertext'>Fig 13. AHL sensor with increasing concentration of AHL generator supernant</div>
                 </div>
+                <div className='innerpart'>We transferred the supernatant from generator liquid culture which contained AHL into AHL sensor. The result showed that supernatant from a higher concentration of generator inducing AHL sensor to express higher amount of GFP. Moreover, after we transform the data and take the logarithm of generator density, we find a similar result which we had done in experiment 1. (Fig10)</div>
+                <div className='innerpart'>Comparing exp1 and exp3 result, confirming that Vibrio density is proportional to the AHL concentration, at the condition of the real-time situation to avoid AHL accumulation. </div>
             </div>
             <div className='part'>
                 <div className='part-title'>Conclusion:</div>
@@ -178,20 +190,14 @@ const Detection =
 
 
 
-const Kill =
+const Substances =
     <div>
-       <div className='innerpart'>According to the detection part, we have successfully created a bio-sensor which can detect and react to different concentration of AHL. Moreover, our fake vibrio(BBa_2774004) can also secrete AHL, and confirm vibrio density is proportional to AHL concentration. Our engineered E.coli. can detect Vibrio density and release anti-Vibrio substances (replace GFP to anti-vibrio peptides).</div>
-       <div className='innerpart'>while vibrio concentration exceeds hazardous concentration.</div>
-       <div className='innerpart'>to detect Vibrio density which can express gene directly (anti-vibrio substance or GFP for the experiment). Therefore, with the presence of AHL, the gene under the regulation of pLux will express. However, when the vibrio is killed. Our engineered E.coli will continue to grow without constraint and cause bio-safety concern. Therefore we want to design a switch to control engineered E.coli while vibrio concentration is low. At first glance, we come up with kill switch using regular protein.</div>
-     
-
         <div className='part'>
-            <div className='part-title'>Substances Test</div>
             <div className='innerpart'>Based on our gene circuit, we need two kinds of substances to fulfill our goal. The first one is the suicide gene. When Vibrio concentration is low, our E. coli need to suicide themselves to maintain the equilibrium. Therefore, we introduced “tsRNA” (toxic small RNA), which was studied and experimented by Dr. Rotem . “tsRNA” was first found in Burkholderia cenocepacia and showed its toxic to E. coli. to inhibit E. coli growth. Moreover, references show that “tsRNA” couldn’t penetrate the bacterial cell wall, either from outside or inside. Therefore, it becomes the best candidate for our suicide gene. Although the mechanism of “tsRNA” is not clearly known, Dr. Rotem had tried complement sequences of “tsRNA” shown negative results. They hypothesized that “tsRNA” might target and mis-regulate essential genes within the E. coli cell. </div>
             <div className='innerpart'>To test the function of tsRNA for our suicide gene, we put tsRNA sequence under pLac promoter. Using IDT synthesized technology, we got the gene fragment (BBa_2774001).</div>
             <div style={{width:'300px'}} className='illustration'>
                 <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.tsrna}/>
-                <div className='undertext'>Model of tsRNA</div>
+                <div className='undertext'>Fig 14. The secondary structure of tsRNA</div>
             </div>
         </div>
         <div className='part'>
@@ -214,7 +220,10 @@ const Kill =
             <div className='innerpart'>Dr. Rotem suggested us to check if our tsRNA mutated during transforming because of the inferiority of growth rate. Or to check tsRNA expression by using Northern blotting to check the RNA expression. Therefore, we sequenced our plasmid (tsRNA) and BLAST the result with our designed sequence: showing no mutation on tsRNA section.</div>
             <div className='illustration'>
                 <img className='illust-image' style={{backgroundColor:'transparent'}}  src={Constant.image.experiment.strength}/>
+                <div className='undertext'>Fig 15. Sequencing result of tsRNA</div>
             </div>
+            <div className='part-title'>Conclusion</div>
+            <div className='innerpart'>Our experiment result shows that the inhibition efficiency of tsRNA is 12%, which is significantly different from the one reported by Dr. Rotem. We sequenced our plasmid and no mutation was found. We inferred that the low inhibition efficiency is due to few expression of tsRNA. We believe this can be improved by using a stronger promoter to get a better result.</div>
         </div>
     </div>
 
@@ -237,8 +246,8 @@ const Data ={
             { Title: 'Detection',
               Description: Detection
             },
-            { Title: 'Kill Switch',
-              Description: Kill
+            { Title: 'Substances test',
+              Description: Substances
             }
         ]
     }

@@ -5,6 +5,7 @@ import Content from './Content'
 
 const PDF =
     <div>
+        https://drive.google.com/file/d/1AUPIcNdju8I6IRvF_1VFVveuY7yBvywj/view?usp=sharing
     </div>
 
 

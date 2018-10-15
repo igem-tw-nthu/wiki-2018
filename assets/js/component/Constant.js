@@ -12,7 +12,8 @@ if(process.env.NODE_ENV === 'development'){
 
   Video = {
     sampling: '../assets/video/sampling.mp4',
-    lid: '../assets/video/lid.mp4'
+    lid: '../assets/video/lid.mp4',
+    home: '../assets/video/home.mp4'
   },
 
   Image = {
@@ -22,6 +23,15 @@ if(process.env.NODE_ENV === 'development'){
       fb: '../assets/images/icon/fb.png',
       github: '../assets/images/icon/github.png',
       ig: '../assets/images/icon/ig.png',
+    },
+
+    collaboration:{
+      part: '../assets/images/hp/collaboration/part.png',
+      email: '../assets/images/hp/collaboration/email.png'
+    },
+
+    home: {
+      overview: '../assets/images/home/overview.png'
     },
 
 
@@ -49,6 +59,10 @@ if(process.env.NODE_ENV === 'development'){
       anti: '../assets/images/wetlab/overview/anti.png'
     },
 
+    model:{
+      interaction: '../assets/images/wetlab/model/interaction.png'
+    },
+
     experiment: {
       transform: '../assets/images/wetlab/experiment/transform.png',
       elec : '../assets/images/wetlab/experiment/elec.png',
@@ -60,12 +74,15 @@ if(process.env.NODE_ENV === 'development'){
       cycle: '../assets/images/wetlab/experiment/cycle.png',
       sensor: '../assets/images/wetlab/experiment/sensor.png',
       exp_1 : '../assets/images/wetlab/experiment/exp.1.png',
+      exp_2: '../assets/images/wetlab/experiment/exp.2.png',
+      exp_3: '../assets/images/wetlab/experiment/exp.3.png',
       data_1: '../assets/images/wetlab/experiment/data.1.png',
       table_2: '../assets/images/wetlab/experiment/table.2.png',
       table_3: '../assets/images/wetlab/experiment/table.3.png',
       table_4: '../assets/images/wetlab/experiment/table.4.png',
       result_2: '../assets/images/wetlab/experiment/result.2.png',
       result_3: '../assets/images/wetlab/experiment/result.3.png',
+      result_4: '../assets/images/wetlab/experiment/result.4.png',
       tsrna: '../assets/images/wetlab/experiment/tsrna.png',
       tsrna_test: '../assets/images/wetlab/experiment/tsrna_test.png',
       strength: '../assets/images/wetlab/experiment/strength.png',
@@ -126,6 +143,7 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     topfull:{
+      collaboration: '../assets/images/topfull/collaboration.top.png',
       application: '../assets/images/topfull/application.top.png',
       description: '../assets/images/topfull/description.top.png',
       design: '../assets/images/topfull/design.top.png',
@@ -147,7 +165,8 @@ if(process.env.NODE_ENV === 'development'){
       experiment: '../assets/images/topfull/experiment.top.png',
       wetlab_overview: '../assets/images/topfull/wetlab_overview.top.png',
       drylab_overview: '../assets/images/topfull/drylab_overview.top.png',
-      demonstration: '../assets/images/topfull/demonstration.top.png'
+      demonstration: '../assets/images/topfull/demonstration.top.png',
+      notebook: '../assets/images/topfull/notebook.top.png'
     },
 
     member:{

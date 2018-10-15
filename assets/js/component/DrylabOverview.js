@@ -28,7 +28,7 @@ const Introduction =
             <a href="http://2009.igem.org/Team:Cambridge/Project"> Cambridge team </a> in iGEM 2009
         </div>
         <div className='part'>
-            The change of color is continuous and conventionally, we use our naked eyes to determine whether the color changes or not, but obviously, it’s quite inaccurate. As we have mentioned before, each color has its own meaning and we have to analyze the message from each color in a scientific way.
+            The change of color is continuous. Conventionally, we use our naked eyes to determine whether the color changes or not, but obviously, it’s quite inaccurate. As we have mentioned before, each color has its own meaning and we have to analyze the message from each color in a scientific way.
         </div>
     </div>
 

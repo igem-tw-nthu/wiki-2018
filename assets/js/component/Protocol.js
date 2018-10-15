@@ -3,6 +3,13 @@ import Constant from "./Constant"
 import Content from "./Content"
 
 
+
+const Page =
+    <div>
+        'https://drive.google.com/file/d/1ATZZaWsNO_d8iyaQgqDZaUll_uk9C4X6/view?usp=sharing/preview'
+    </div>
+
+
 const Data = {
     viewbar: {
         Title: 'Protocol',
@@ -12,9 +19,7 @@ const Data = {
     content: {
         Introduction:'',
         parts:[
-            {
-                
-            }
+            { Description : Page }
         ]
     }
 }

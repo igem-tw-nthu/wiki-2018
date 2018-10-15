@@ -14,7 +14,7 @@ const Introduction =
                 <div className='illust-image-wrapper'> 
                     <img className='illust-image' src={Constant.image.design.exp}/>
                 </div>
-                <div className='undertext'>Fig 1. exponential growth of vibrio without constrain in fish farm</div>
+                <div className='undertext'>Fig 1. exponential growth of vibrio without constraint in fish farm</div>
             </div>
 
             <div className='illustration'>

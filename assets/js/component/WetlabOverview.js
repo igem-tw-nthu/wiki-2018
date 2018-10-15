@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Content from './Content';
 import Constant from './Constant';
 
-console.log(Constant.image.wetlab_overview);
-
 
 const Introduction = 
     <div>

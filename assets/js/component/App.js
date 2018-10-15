@@ -70,7 +70,7 @@ class Content extends React.Component{
     }
 
     componentDidUpdate(){
-        document.body.scrollTo(0,0)
+        window.scrollTo(0,0)
     }
 }
 

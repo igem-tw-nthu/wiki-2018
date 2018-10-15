@@ -19,15 +19,15 @@ const Pumps =
             <div>
                 <div className='innerpart'>
                 <div className='part-title'>1. Accurate metering </div>
-                <div>peristaltic pumps use flexible tubing to run through rollers in the pump head. As fluid goes through the pump head, packet of fluids can be formed. Simply by determining the size of the tubing and the speed of the roller turning in the pump head, the accurate metering of the media can be achieved.</div>
+                <div>Peristaltic pumps use flexible tubing to run through rollers in the pump head. As fluid goes through the pump head, packet of fluids can be formed. Simply by determining the size of the tubing and the speed of the roller turning in the pump head, the accurate metering of the media can be achieved.</div>
                 </div>
                 <div className='innerpart'>
                 <div className='part-title'>2. Self priming </div>
-                <div>peristaltic pumps can draw fluid into the tubing when starting dry while other pumps require user to fill pump and suction line with fluid before use which can be inconvenient and also create potential for contamination.</div>
+                <div>Peristaltic pumps can draw fluid into the tubing when starting dry while other pumps require user to fill pump and suction line with fluid before use which can be inconvenient and also create potential for contamination.</div>
                 </div>
                 <div className='innerpart'>
                 <div className='part-title'>3. Non-siphoning </div>
-                <div>a peristaltic pump is non-siphoning which means that it prevents back flow into the system when the pump stop turning. This promotes accuracy during dispensing.</div>
+                <div>A peristaltic pump is non-siphoning which means that it prevents back flow into the system when the pump stop turning. This promotes accuracy during dispensing.</div>
                 </div>
             </div>
         </div>

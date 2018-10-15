@@ -4,8 +4,8 @@ import Content from './Content'
 
 
 const PDF =
-    <div>
-        https://drive.google.com/file/d/1AUPIcNdju8I6IRvF_1VFVveuY7yBvywj/view?usp=sharing
+    <div style={{padding:'20px', backgroundColor:'lightgray'}}>
+        <embed  style={{width:'100%',height:'800px'}} src='https://drive.google.com/file/d/1AUPIcNdju8I6IRvF_1VFVveuY7yBvywj/preview'></embed>
     </div>
 
 

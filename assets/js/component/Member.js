@@ -250,7 +250,7 @@ const Content = [
       image: `${Constant.image.member.Timtor_Chen}`,
       position: 'Drylab',
       department: 'Physics',
-      description: `He done the wiki only, all of them are freeloaders!.`,
+      description: ``,
       contact: {
           github: 'https://github.com/timtorChen'
       }

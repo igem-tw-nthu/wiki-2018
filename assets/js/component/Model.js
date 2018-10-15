@@ -7,44 +7,75 @@ import MathJax  from 'react-mathjax'
 const Interaction = 
     <div>
          <div className='illustration'> 
+            <div style={{margin:'auto',width:'500px'}}>
             <img className='illust-image' src={Constant.image.model.interaction}/>
+            </div>
         </div> 
         <div className='part'>We genetically modify the E.coli, giving them the ability to detect Vibrio concentration, and secrete some compound to supress Vibrio and itself. </div>
-        <div className='part'>If the AHL concentration exceed a specific threshold, engineered E.coli will secrete antibacterial peptide Colisin M to kill Vibrio. Otherwise, the Vibrio concentration below the E.coli's detection threshold, engineered Ecoli will secrete suicide protein tsRNA to commit suicide.</div>
+        <div className='part'>If the AHL concentration exceed a specific threshold, engineered E.coli will secrete antibacterial peptide Colisin M to kill Vibrio. Otherwise, the Vibrio concentration below the E.coli's detection threshold, engineered Ecoli will secrete tsRNA to commit suicide.</div>
     </div>
 
 
 const Eq1 =  `{{dV} \\over{dt}} = r_v V - {{r_v} \\over {V_{max}}} V^2 -a VN`
 const Eq2 = `{{dA} \\over {dt}} = k_AV - \\lambda_A A`
 const Eq3 =`{{dE} \\over {dt}} = bEA - cES - \\lambda_E E`
-const Eq4 =`{{dN} \\over {dt}} = k_NE - \\lambda_N N `
+const Eq4 =`{{dC} \\over {dt}} = k_CE - \\lambda_C C `
 const Eq5 =`{{dS} \\over {dt}} = k_SE - \\lambda_S S`
-
+const cont1= `A \\lt A_t, \\ k_C=0`
+const cont2= `A \\geq A_t, \\ k_S=0`
 
 const Equations =
     <div>
-        <div>We revise this model from Lotka-Volterra model with logistic population groth, and the decay rate of compound.</div>
-        <MathJax.Provider>
-            <MathJax.Node  formula={Eq1}/>
-            <MathJax.Node  formula={Eq2}/>
-            <MathJax.Node  formula={Eq3}/>
-            <MathJax.Node  formula={Eq4}/>
-            <MathJax.Node  formula={Eq5}/>
-        </MathJax.Provider>
+        <div className='part'>
+            <div>We revise this model from Lotka-Volterra model with logistic population groth, and the decay rate of compound.</div>
+            <div style={{width:'fit-content', margin:'auto'}}>
+                <MathJax.Provider>   
+                    <div style={{marginTop:'20px'}}>
+                        <MathJax.Node inline formula={Eq1}/>
+                    </div>
+                    <div style={{marginTop:'20px'}}>
+                        <MathJax.Node inline formula={Eq2}/>
+                    </div>
+                    <div style={{marginTop:'20px'}}>
+                        <MathJax.Node inline formula={Eq3}/>
+                    </div>
+                    <div style={{marginTop:'20px'}}>
+                        <MathJax.Node inline formula={Eq4}/>
+                    </div>
+                    <div style={{marginTop:'20px'}}>
+                        <MathJax.Node inline formula={Eq5}/>
+                    </div>
+                </MathJax.Provider>
+            </div>
+        </div>
+
+        <div className='part'>
+            With the contraint of AHL threshold
+            <div style={{width:'fit-content', margin:'auto'}}>
+            <MathJax.Provider>   
+                <div style={{marginTop:'20px'}}>
+                    <MathJax.Node inline formula={cont1}/>
+                </div>
+                <div style={{marginTop:'20px'}}>
+                    <MathJax.Node inline formula={cont2}/>
+                </div>
+            </MathJax.Provider>
+            </div>
+        </div>
     </div>
 
 const Discuss=
     <div>
-        With changing specific parameter, such as binding rate of antibacterial Colisin M , and the detection threshold of AHL for engineered E.coli we are able to control the population of two bacterias presenting high and low oscillation amplitude.
+        With changing specific parameter, such as binding strength of antibacterial Colisin with Vibrio, and the detection threshold of AHL for engineered E.coli we are able to simulate the population of two bacteria in oscillating, and a very sensitive constant mode.
         <div className='illustration'> 
-            <img className='illust-image' src={Constant.image.model.interaction}/>
+            <img className='illust-image' src={Constant.image.model.result}/>
         </div> 
 
     </div>
 
 const Soucre =
     <div>
-        Code detail On Github
+        Code detail On <a href='https://github.com/igem-tw-nthu/model-2018'>Github</a>
     </div>
 
 
@@ -52,7 +83,7 @@ const Soucre =
 const Data = {
     viewbar:{
         Title: 'Model',
-        Subtitle: '',
+        Subtitle: 'Build a simple bio-oscillator',
         image: Constant.image.topfull.model
     },
     content:{

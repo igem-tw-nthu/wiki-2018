@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     `
 
 const ContentWrapper = styled.div`
-    width: 50%;
+    width: 55%;
     margin: auto;
     font-size: 20px;
     text-align: justify;

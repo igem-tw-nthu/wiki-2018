@@ -38,7 +38,9 @@ const Introduction =
         Hence the goal of wetlab this year is going to design a gene circuit which can make engineered E.coli to secrete anti-vibrio substances[1] while vibrio concentration exceed hazard concentration, and engineered E.coli suicide[2] while vibrio concentration is low to avoid bio-safety concern.    
         </div>
         <div className='illustration'> 
-            <img className='illust-image' src={Constant.image.design.cycle}/>
+            <div style={{margin:'auto',width:'500px'}}>
+                <img className='illust-image' src={Constant.image.design.cycle}/>
+            </div>
         </div>
         <div className='part'> Our gene design can be divided into 3 parts. First is the “detection” part makes our E.coli sense the population of vibrio and respond to it.  Second, the “kill switch” part compares the level of 2 bacteria and switches our E.coli  between modes of secreting anti-vibrio substances and suicide substance. “Growth inhibitor” part includes a toxic protein (so called Colicin M) and a toxic small RNA (tsRNA).</div>
         <div className='part'> Though we want to conduct Vibrio related experiments in our lab, our lab belongs to BSL1 level and we can’t cultivate Vibrio. Therefore, we use 2 different kinds of E. coli. to simulate our succession model with one being as fake Vibrio, and another being as engineered E. coli. </div>

@@ -5,8 +5,8 @@ import Content from "./Content"
 
 
 const Page =
-    <div>
-        'https://drive.google.com/file/d/1ATZZaWsNO_d8iyaQgqDZaUll_uk9C4X6/view?usp=sharing/preview'
+    <div style={{padding:'20px', backgroundColor:'lightgray'}}>
+        <embed  style={{width:'100%',height:'800px'}} src='https://drive.google.com/file/d/1ATZZaWsNO_d8iyaQgqDZaUll_uk9C4X6/preview'></embed>
     </div>
 
 

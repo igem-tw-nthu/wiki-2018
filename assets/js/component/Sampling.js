@@ -104,7 +104,7 @@ const Pumps =
                 <div>N= Number of rollers on the rotor.</div>
                 <div>RPM= pump rpm</div>
             </div>
-            <div style={{marginLeft:'auto'}}>
+            <div style={{marginLeft:'auto',padding: '0 20px'}}>
                 <img style={{height:'180px'}} src={Constant.image.sampling.full_pump}/>
                 <div className='undertext'>Figure 2</div>
             </div>

@@ -60,7 +60,8 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     model:{
-      interaction: '../assets/images/wetlab/model/interaction.png'
+      interaction: '../assets/images/wetlab/model/interaction.png',
+      result: '../assets/images/wetlab/model/result.png'
     },
 
     experiment: {

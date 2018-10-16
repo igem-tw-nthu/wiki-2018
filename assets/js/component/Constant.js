@@ -221,36 +221,35 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     public: {
-      nctu: 'http://2018.igem.org/wiki/images/c/c6/T--NTHU_Taiwan--nctu.png',
+      nctu: '../assets/images/hp/public/nctu.png',
 
-      meetup_group: 'http://2018.igem.org/wiki/images/f/f4/T--NTHU_Taiwan--meetup.group.png',
-      meetup_self: 'http://2018.igem.org/wiki/images/3/3f/T--NTHU_Taiwan--meetup.self.png',
-      meetup_presentation: 'http://2018.igem.org/wiki/images/3/30/T--NTHU_Taiwan--presentation.png',
+      meetup_group: '../assets/images/hp/public/meetup.group.png',
+      meetup_self: '../assets/images/hp/public/meetup.self.png',
+      meetup_presentation: '../assets/images/hp/public/presentation.png',
 
-      trans: 'http://2018.igem.org/wiki/images/f/fe/T--NTHU_Taiwan--trans.png',
-      hspectre: 'http://2018.igem.org/wiki/images/0/05/T--NTHU_Taiwan--hspectrum.png',
+      trans: '../assets/images/hp/public/trans.png',
+      hspectre: '../assets/images/hp/public/hspectrum.png',
 
-      discuss_1: 'http://2018.igem.org/wiki/images/b/bd/T--NTHU_Taiwan--discuss.1.png',
-      discuss_2_1: 'http://2018.igem.org/wiki/images/6/63/T--NTHU_Taiwan--discuss.2.1.png',
-      discuss_2_2: 'http://2018.igem.org/wiki/images/a/aa/T--NTHU_Taiwan--discuss.2.2.png',
-      discuss_2_3: 'http://2018.igem.org/wiki/images/1/1a/T--NTHU_Taiwan--discuss.2.3.png',
-      discuss_3_1: 'http://2018.igem.org/wiki/images/3/37/T--NTHU_Taiwan--discuss.3.1.png',
-      discuss_3_2: 'http://2018.igem.org/wiki/images/f/ff/T--NTHU_Taiwan--discuss.3.2.png',
+      discuss_1: '../assets/images/hp/public/discuss.1.png',
+      discuss_2_1: '../assets/images/hp/public/discuss.2.1.png',
+      discuss_2_2: '../assets/images/hp/public/discuss.2.2.png',
+      discuss_2_3: '../assets/images/hp/public/discuss.2.3.png',
+      discuss_3_1: '../assets/images/hp/public/discuss.3.1.png',
+      discuss_3_2: '../assets/images/hp/public/discuss.3.2.png',
     
-      xgem: 'http://2018.igem.org/wiki/images/3/35/T--NTHU_Taiwan--xgem.png',
-      chart_1: 'http://2018.igem.org/wiki/images/d/d7/T--NTHU_Taiwan--chart.1.png',
-      chart_2: 'http://2018.igem.org/wiki/images/9/90/T--NTHU_Taiwan--chart.2.png',
-      chart_3: 'http://2018.igem.org/wiki/images/4/4a/T--NTHU_Taiwan--chart.3.png'
+      xgem: '../assets/images/hp/public/xgem.png',
+      chart_1: '../assets/images/hp/public/chart.1.png',
+      chart_2: '../assets/images/hp/public/chart.2.png',
+      chart_3: '../assets/images/hp/public/chart.3.png'
     },
 
     education: {
-      pie_1: 'http://2018.igem.org/wiki/images/a/aa/T--NTHU_Taiwan--pie.1.png',
-      pie_2: 'http://2018.igem.org/wiki/images/6/62/T--NTHU_Taiwan--pie.2.png',
-      pie_3: 'http://2018.igem.org/wiki/images/4/42/T--NTHU_Taiwan--pie.3.png',
-      group: 'http://2018.igem.org/wiki/images/f/f9/T--NTHU_Taiwan--group.png'
+      pie_1: '../assets/images/hp/education/pie.1.png',
+      pie_2: '../assets/images/hp/education/pie.2.png',
+      pie_3: '../assets/images/hp/education/pie.2.png',
+      group: '../assets/images/hp/education/group.png'
     },
   }
-
 }else{
   
   // production
@@ -463,32 +462,33 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     public: {
-      nctu: '../assets/images/hp/public/nctu.png',
+      nctu: 'http://2018.igem.org/wiki/images/c/c6/T--NTHU_Taiwan--nctu.png',
 
-      meetup_group: '../assets/images/hp/public/meetup.group.png',
-      meetup_self: '../assets/images/hp/public/meetup.self.png',
-      meetup_presentation: '../assets/images/hp/public/presentation.png',
+      meetup_group: 'http://2018.igem.org/wiki/images/f/f4/T--NTHU_Taiwan--meetup.group.png',
+      meetup_self: 'http://2018.igem.org/wiki/images/3/3f/T--NTHU_Taiwan--meetup.self.png',
+      meetup_presentation: 'http://2018.igem.org/wiki/images/3/30/T--NTHU_Taiwan--presentation.png',
 
-      trans: '../assets/images/hp/public/trans.png',
-      hspectre: '../assets/images/hp/public/hspectrum.png',
+      trans: 'http://2018.igem.org/wiki/images/f/fe/T--NTHU_Taiwan--trans.png',
+      hspectre: 'http://2018.igem.org/wiki/images/0/05/T--NTHU_Taiwan--hspectrum.png',
 
-      discuss_1: '../assets/images/hp/public/discuss.1.png',
-      discuss_2_1: '../assets/images/hp/public/discuss.2.1.png',
-      discuss_2_2: '../assets/images/hp/public/discuss.2.2.png',
-      discuss_2_3: '../assets/images/hp/public/discuss.2.3.png',
-      discuss_3_1: '../assets/images/hp/public/discuss.3.1.png',
-      discuss_3_2: '../assets/images/hp/public/discuss.3.2.png',
+      discuss_1: 'http://2018.igem.org/wiki/images/b/bd/T--NTHU_Taiwan--discuss.1.png',
+      discuss_2_1: 'http://2018.igem.org/wiki/images/6/63/T--NTHU_Taiwan--discuss.2.1.png',
+      discuss_2_2: 'http://2018.igem.org/wiki/images/a/aa/T--NTHU_Taiwan--discuss.2.2.png',
+      discuss_2_3: 'http://2018.igem.org/wiki/images/1/1a/T--NTHU_Taiwan--discuss.2.3.png',
+      discuss_3_1: 'http://2018.igem.org/wiki/images/3/37/T--NTHU_Taiwan--discuss.3.1.png',
+      discuss_3_2: 'http://2018.igem.org/wiki/images/f/ff/T--NTHU_Taiwan--discuss.3.2.png',
     
-      xgem: '../assets/images/hp/public/xgem.png',
-      chart_1: '../assets/images/hp/public/chart.1.png',
-      chart_2: '../assets/images/hp/public/chart.2.png',
-      chart_3: '../assets/images/hp/public/chart.3.png'
+      xgem: 'http://2018.igem.org/wiki/images/3/35/T--NTHU_Taiwan--xgem.png',
+      chart_1: 'http://2018.igem.org/wiki/images/d/d7/T--NTHU_Taiwan--chart.1.png',
+      chart_2: 'http://2018.igem.org/wiki/images/9/90/T--NTHU_Taiwan--chart.2.png',
+      chart_3: 'http://2018.igem.org/wiki/images/4/4a/T--NTHU_Taiwan--chart.3.png'
     },
 
     education: {
-      pie_1: '',
-      pie_2: '',
-      pie_3: ''
+      pie_1: 'http://2018.igem.org/wiki/images/a/aa/T--NTHU_Taiwan--pie.1.png',
+      pie_2: 'http://2018.igem.org/wiki/images/6/62/T--NTHU_Taiwan--pie.2.png',
+      pie_3: 'http://2018.igem.org/wiki/images/4/42/T--NTHU_Taiwan--pie.3.png',
+      group: 'http://2018.igem.org/wiki/images/f/f9/T--NTHU_Taiwan--group.png'
     },
   }
 }

@@ -31,7 +31,12 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     home: {
-      overview: '../assets/images/home/overview.png'
+      overview: '../assets/images/home/overview.png',
+      drylab: '../assets/images/home/drylab.png',
+      wetlab: '../assets/images/home/wetlab.png',
+      hp: '../assets/images/home/hp.png',
+      project: '../assets/images/home/project.png',
+      team: '../assets/images/home/team.png'
     },
 
 
@@ -167,10 +172,12 @@ if(process.env.NODE_ENV === 'development'){
       wetlab_overview: '../assets/images/topfull/wetlab_overview.top.png',
       drylab_overview: '../assets/images/topfull/drylab_overview.top.png',
       demonstration: '../assets/images/topfull/demonstration.top.png',
-      notebook: '../assets/images/topfull/notebook.top.png'
+      notebook: '../assets/images/topfull/notebook.top.png',
+      attribution: '../assets/images/topfull/attribution.top.png'
     },
 
     member:{
+      Chia_Min_Huang: '../assets/images/team/member/Mickey.png',
       Max_Wang: '../assets/images/team/member/Max Wang.png',
       Timtor_Chen: '../assets/images/team/member/Timtor Chen.png',
       Ricky_Chan: '../assets/images/team/member/Ricky Chan.png',
@@ -182,7 +189,6 @@ if(process.env.NODE_ENV === 'development'){
       You_Yang_Tsai: '../assets/images/team/member/You Yang Tsai.png',
       Teng_Yen_Lin: '../assets/images/team/member/Teng Yen Lin.png',
       Pei_Yun_Wu: '../assets/images/team/member/Pei Yun Wu.png',
-      Chia_Min_Huang: '',
       Ruby_Chan: '../assets/images/team/member/Ruby Chan.png',
       Vanessa_Chuang : '../assets/images/team/member/Vanessa Chuang.png',
       Kai_Chiang_Yu: '../assets/images/team/member/Kai-Chiang Yu.png',

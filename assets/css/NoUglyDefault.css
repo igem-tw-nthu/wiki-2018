@@ -127,3 +127,8 @@ p{
     word-break: break-all;
     margin-top: 20px;
 }
+
+
+.special-name{
+    font-style: italic;
+}

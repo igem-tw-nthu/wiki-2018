@@ -127,7 +127,7 @@ const Pumps =
         </div>
 
         <div className='illustration'>
-            <video className='illust-image' autoPlay loop>
+            <video className='illust-image' autoPlay muted loop>
                 <source src={Constant.video.lid} type="video/mp4"/>
             </video>
           </div>
@@ -138,7 +138,7 @@ const Axis =
     <div>
         <div>We use two 12V 28BYJ-48 stepper motors to control the XY axis to move our sample to the specific coordinate and connect them to Arduino as well as uln2003 motor drivers to control the speed and time. The step angle of the motor is 5.625 degrees and the reduction ratio is 1/64, therefore, for one revolution it needs 4096 steps. The diameter of the gear mounted on the motor is 36mm, so for each step, it can linearly move forward or backward 1.76mm. The length between two wells on 96-well plate is about 18mm, thus, this motor can absolutely satisfy our need for our low-cost XY plane setting. </div>
         <div className='illustration'>
-            <video className='illust-image' autoPlay loop>
+            <video className='illust-image' autoPlay muted loop>
                 <source src={Constant.video.sampling} type="video/mp4"/>
             </video>
         </div>

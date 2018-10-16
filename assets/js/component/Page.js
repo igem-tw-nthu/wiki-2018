@@ -163,7 +163,7 @@ let Link = [
     },
 
     { display: 'Drylab',
-      sublink: ['Drylab-Overview','Platform','Imaging','Sampling','Environment','Software','Application','Demonstration']
+      sublink: ['Drylab-Overview','Sampling','Platform','Environment','Imaging','Software','Application','Demonstration']
     },
 
     { display: 'Wetlab',

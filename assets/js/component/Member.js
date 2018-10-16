@@ -5,6 +5,7 @@ import { inject, observer } from 'mobx-react';
 import Viewbar from './Viewbar';
 
 const ExtraWrapper = styled.div`
+    margin-bottom: 150px;
     `
 
 const Wrapper = styled.div`
@@ -279,15 +280,15 @@ const Content = [
       }
     },
 
-    // { name: 'Mickey Huang',
-    //   image: `${Constant.image.member.Chia_Min_Huang}`,
-    //   position: 'Drylab',
-    //   department: 'Physics',
-    //   description: `Mickey, a college student in third grade, studying phisics. Although her dream is to be a great scientist, she also like to make things on her own hand. And it is lucky for her to meet this iGEM group, which provides her such a good chance. She also like to sing and play volleyball. Thus she hope that everyone can develop some hobbies and also keep professional in the meantime, having a happy life.`,
-    //   contact: {
-    //       facebook: 'https://www.facebook.com/mickeyhellomickeyhello'
-    //   }
-    // },
+    { name: 'Mickey Huang',
+      image: `${Constant.image.member.Chia_Min_Huang}`,
+      position: 'Drylab',
+      department: 'Physics',
+      description: `Mickey, a college student in third grade, studying phisics. Although her dream is to be a great scientist, she also like to make things on her own hand. And it is lucky for her to meet this iGEM group, which provides her such a good chance. She also like to sing and play volleyball. Thus she hope that everyone can develop some hobbies and also keep professional in the meantime, having a happy life.`,
+      contact: {
+          facebook: 'https://www.facebook.com/mickeyhellomickeyhello'
+      }
+    },
 
     { name: 'Allen Jhang',
       image: `${Constant.image.member.Jhang_Chuan_Jia}`,

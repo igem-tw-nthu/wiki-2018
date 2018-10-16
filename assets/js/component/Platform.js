@@ -89,11 +89,11 @@ const Movinglid =
 const Data = {
     viewbar: {
         Title: 'Platform',  
-        Subtitle: 'Plate, light, and moving lid',
+        Subtitle: 'Plate and the moving lid',
         image: Constant.image.topfull.platform
     },
     content: {
-        Introduction: 'The reaction platform mainly consists of three parts: The Microtitration Plate 96-Well, the light blocking base, and auto moving lid.',
+        Introduction: 'The reaction platform mainly consists of three parts: The 96-Well Microtitration Plate, the light blocking base, and auto moving lid.',
         parts: [
             { Title: '96-Well Microtitration',
               Description: Microtitration

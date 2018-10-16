@@ -6,7 +6,7 @@ import Viewbar from '../Viewbar';
 
 
 const Wrapper = styled.div`
-
+    margin-bottom: 150px;
     `
 
 const ContentWrapper = styled.div`

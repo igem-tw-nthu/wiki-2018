@@ -21,7 +21,7 @@ const Pond =
         <div className='illustration'>
             <img className='illust-image' src={Constant.image.software.line}/>
         </div>
-        <div className='part'>Furthermore, in order to let the farmers keep track of how the vibrios in their farm has been growing, we’ve made a history record chart, of which the Y coordinate is concentration, and the X coordinate is time. The concentration points will be drawn every hour.  The chart can be drag, zoom in and out for a closer look. By knowing the condition of their pond beforehand and even predict how the amount of the vibrios might grow, the farmers can do precaution in order to prevent vibrios from harming their fish or shrimp.</div>
+        <div className='part'>Furthermore, in order to let the farmers keep track of how the vibrio in their farm has been growing, we’ve made a history record chart, of which the Y coordinate is concentration, and the X coordinate is time. The concentration points will be drawn every hour.  The chart can be drag, zoom in and out for a closer look. By knowing the condition of their pond beforehand and even predict how the amount of the vibrios might grow, the farmers can do precaution in order to prevent vibrios from harming their fish or shrimp.</div>
     </div>
 
 const Suggestion =

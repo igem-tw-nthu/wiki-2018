@@ -113,13 +113,19 @@ const FontIcon = styled.div`
     color: lightsteelblue;
     `
 
-const Pokemon = styled.img`
-    height: 30px;
+const Pokemon = styled.div`
+    margin-top: 5px;
+    color: steelblue;
+    `
+
+const Hidden = styled.div`
+    display: none;
     `
 
 const Bug = styled.img`
     height: 50px;
     `
+
 
 const Content = [
     { name: 'Max Wang',
@@ -250,7 +256,14 @@ const Content = [
       image: `${Constant.image.member.Timtor_Chen}`,
       position: 'Drylab',
       department: 'Physics',
-      description: ``,
+      description: <div>
+          <Hidden>Some of them are just freeloaders!! They reluctant to be responsible to their job, and always absent in the experiment.
+                  Our drylab Leader is a classical one. He can do nothing about software and hardware, but nonstopingly order members doing everything.
+                  I feel disappointed when I realize this situation.
+                  It is a waste of my time working with a group without a passion... 
+          </Hidden>
+          Lack of refreshment. Please donate to ETH : 0xe203180876b1263542464742b7b144e65c4f1885
+          </div>,
       contact: {
           github: 'https://github.com/timtorChen'
       }
@@ -354,8 +367,6 @@ const SquareBelow = styled(Below)`
 
 
 
-
-
 @inject('appState')
 @observer
 class Member extends Component {
@@ -395,9 +406,12 @@ class Member extends Component {
                             <Description>{member.description}</Description>
                            
                             {member.contact?
-                                member.contact.email? 
-                                <Email>{`# ${member.contact.email}`}</Email>  
-                                :null
+                                <div>
+                                {  member.contact.email? 
+                                   <Email>{`# ${member.contact.email}`}</Email>  :null}
+                                {  member.contact.pokemon_id? 
+                                   <Pokemon>{`# Pokémon Id: ${member.contact.pokemon_id}`}</Pokemon>  :null}
+                                </div>
                             :null}
 
                             {member.contact? 
@@ -416,15 +430,9 @@ class Member extends Component {
                                 <Linker href={member.contact.github}>
                                     <FontIcon className='fab fa-github'/>
                                 </Linker> : null}
-                            
-
-                                {/* { member.contact.email? 
-                                <FontIcon className='fas fa-envelope'/> : null}  */}
                                 
-                                {/* {member.contact.pokemon_id? 
-                                <Pokemon src={Constant.image.member.icon.pokemon} />: null}
                                 {member.contact.bug ? 
-                                <Bug src={Constant.image.member.icon.bug} />: null} */}
+                                <Bug src={Constant.image.member.icon.bug} />: null}
                                 </Contact>
                             :null}
                         </Below>

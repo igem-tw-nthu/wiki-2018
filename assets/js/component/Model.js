@@ -66,9 +66,10 @@ const Equations =
 
 const Discuss=
     <div>
-        With changing specific parameter, such as binding strength of antibacterial Colisin with Vibrio, and the detection threshold of AHL for engineered E.coli we are able to simulate the population of two bacteria in oscillating, and a very sensitive constant mode.
+        With changing specific parameter, such as binding strength of antibacterial Colisin with Vibrio, binding strength of Ahl with Ecoli, and the detection threshold of AHL for engineered E.coli. We are able to simulate the population of two bacteria in oscillating, and a parameter sensitive constant mode.
         <div className='illustration'> 
             <img className='illust-image' src={Constant.image.model.result}/>
+            <div className='undertext'>Two figure are just a slight change of the Binding strength of Ahl with Ecoli</div>
         </div> 
 
     </div>

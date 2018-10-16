@@ -220,6 +220,7 @@ if(process.env.NODE_ENV === 'development'){
       aqua_2: '../assets/images/hp/interview/aqua.2.png'
     },
 
+    
     public: {
       nctu: 'http://2018.igem.org/wiki/images/c/c6/T--NTHU_Taiwan--nctu.png',
 

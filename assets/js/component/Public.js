@@ -53,8 +53,7 @@ const Eurasian =
 const Trans = 
     <div>
         <div className='illustration'>
-            <iframe style={{height:'400px', width:'100%'}} src='https://www.youtube.com/embed/1wib7JQEZ78'>
-            </iframe>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/1wib7JQEZ78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         
         <div className='part'>

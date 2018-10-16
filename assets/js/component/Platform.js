@@ -8,8 +8,8 @@ const Microtitration =
     <div>
         <div>After extracting a sample from the fish farm, the sample will be dripped into the 96 -well plate. In the plate, we put in the mixture of MV-kit buffer for the sample to react. There are several reasons we chose to use 96-well plates instead of eppendorf or 6/24/48 well plate.</div>
         <div className='part'>
-            <div className='innerpart'>1.	Eppendorf has an unremovable lid, which is not good for auto sampling</div>
-            <div className='innerpart'>2.	The base of eppendorf is sharp and liquid will not distribute evenly, which is not good for color sensing; while 96-well plates are flat.</div>
+            <div className='innerpart'>1.	Eppendorf has an unremovable lid, which is not convenient for our auto sampling design.</div>
+            <div className='innerpart'>2.	The base of eppendorf is sharp and liquid will not distribute evenly, which is not suitable for color sensing while 96-well plates are flat.</div>
             <div className='innerpart'>3.	The volume of the 96-well plate is small enough for us to put the sample in, while the other plates are too big.</div>
             <div className='innerpart'>4.	It can contain the most samples in one single plate. In that way, we can reduce the rate of changing new plates.</div>
         </div>
@@ -68,11 +68,9 @@ const Microtitration =
 
 const Lightblock = 
     <div>
-        <div>Since we need to use the camera to detect the color changes of each well, we need to create an environment that can make the color as clear as possible.  Therefore, we use 3D printing and polylactic acid (PLA) to print out a platform that blacks out all the area except for the 24 holes of each plate.</div>
-        <div>
-            <div className='illustration'>
-                <img className='illust-image' src={Constant.image.platform.block}/>
-            </div>
+        <div>Since we need to use the camera to detect the color changes of each well, we need to create an environment that can make the color as clear as possible.  Therefore, we use 3D printing and polylactic acid (PLA) to print out a platform that blacks out all the area except for the 24 holes of each plate that have our sample in.</div>
+        <div className='illustration'>
+            <img className='illust-image' src={Constant.image.platform.block}/>
         </div>
     </div>
 

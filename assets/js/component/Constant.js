@@ -255,6 +255,10 @@ if(process.env.NODE_ENV === 'development'){
       pie_3: '../assets/images/hp/education/pie.2.png',
       group: '../assets/images/hp/education/group.png'
     },
+
+    demonstration:{
+      ace: '../assets/images/drylab/demonstration/ace.png'
+    }
   }
 }else{
   

@@ -4,6 +4,15 @@ import Constant from './Constant'
 import Content from './Content';
 
 
+
+const Introduction =
+    <div>
+        <div>The reaction platform mainly consists of three parts: </div>
+        <div className='innerpart'>1.	The 96-Well Microtitration Plate for sample storage and reaction </div>
+        <div className='innerpart'>2.	Light blocking base to black out the area we’re not using to make it easier for camera to detect the color changes of each well</div>
+        <div className='innerpart'>3.	Auto moving lid to prevent the reactive reagent from evaporating</div>
+    </div>
+
 const Microtitration = 
     <div>
         <div>After extracting a sample from the fish farm, the sample will be dripped into the 96 -well plate. In the plate, we put in the mixture of MV-kit buffer for the sample to react. There are several reasons we chose to use 96-well plates instead of eppendorf or 6/24/48 well plate.</div>
@@ -91,7 +100,7 @@ const Data = {
         image: Constant.image.topfull.platform
     },
     content: {
-        Introduction: 'The reaction platform mainly consists of three parts: The 96-Well Microtitration Plate, the light blocking base, and auto moving lid.',
+        Introduction: Introduction,
         parts: [
             { Title: '96-Well Microtitration',
               Description: Microtitration

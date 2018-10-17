@@ -14,11 +14,8 @@ const TopWrapper = styled.div`
         background: linear-gradient(0deg,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3));
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 100% ;
     }
-
-
-
     `
 
 const Video = styled.video`
@@ -26,6 +23,7 @@ const Video = styled.video`
     position: fixed;
     top: 80px;
     z-index: -1;
+
     `
 
 const Title = styled.div`
@@ -80,7 +78,7 @@ class Home extends Component{
                     </Title>
             </TopWrapper>
             <ContentWrapper>
-                <div style={{width:'55%',margin:'auto'}}>
+                <div style={{width:'60%',margin:'auto'}}>
                     <OverviewImage src={Constant.image.home.overview}/>
                 </div>
                 <div style={{width:'fit-content',margin:'auto'}}>

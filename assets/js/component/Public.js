@@ -5,8 +5,6 @@ import Content from './Content';
 
 
 
-
-
 const NCTU = 
     <div>
         <div className='illustration'>
@@ -60,10 +58,8 @@ const Trans =
             <div className='part-title'>About TRANS</div>
             <div>TRANS Conference is a platform where entrepreneurs, experts, investors, and students can exchange ideas, which was created by H. Spectrum, a startup incubator/accelerator focusing on the healthcare sector. As we had a chance to join in this forum, we decided to present our project to people in the healthcare field as many as possible, hoping to get some feedback from them and improve our project.</div>
             <div>
-
             <div className='gallery'>   
-                <img style={{width:'45%', margin:'0px 1%'}} src={Constant.image.public.hspectre}/>
-                <img style={{width:'45%', margin:'0px 1%'}} src={Constant.image.public.trans}/>
+                <img className='illust-image' src={Constant.image.public.trans}/>
             </div>
 
             </div>
@@ -118,8 +114,6 @@ const Trans =
     </div>
 
 
-
-
 const XGEM = 
     <div>
         <div className='illustration'>
@@ -141,6 +135,8 @@ const XGEM =
         </div>
         <div>Its really exciting to have 19 teams from all over the world to interact on XGEM. Some teams have posted their questionnaires related to their project or shared what they had done. We really appreciate your participation and can’t wait to meet these teams in person at Giant Jamboree!</div>
     </div>
+
+
 
 const Data = {
     viewbar:{
@@ -174,7 +170,6 @@ const Data = {
 export default class Public extends Component {
     constructor(props) {
         super(props);
-        
     }
     
     render() {

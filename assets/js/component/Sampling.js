@@ -47,14 +47,14 @@ const Pumps =
                     <td className='tabledata'>Tube diameter</td>
                     <td className='tabledata'>Tube material</td>	
                     <td className='tabledata'>Number of rollers</td>	
-                    <td className='tabledata'>Bearing</td>	
+                    <td className='tabledata' style={{margin:'0px 10px'}}>Bearing</td>	
                     <td className='tabledata'>Motor</td>
                 </tr>
                 <tr>                
                     <td className='tabledata'>31 x 31 x 11 (mm)</td>	
                     <td className='tabledata'>
                         <div>OD: 3mm</div>
-                        <div>ID: 2mm</div>
+                        <div>ID: 1.5mm</div>
                     </td>
                     <td className='tabledata'>Silicone rubber</td>	
                     <td className='tabledata'>three</td>	
@@ -163,12 +163,6 @@ const Result =
 
     
 
-
-const Download =
-    <div>
-        You can download the STL and anrdion code on <a href='https://github.com/igem-tw-nthu/Peristaltic-pumps-2018'>Github</a>
-    </div>
-
 const Reference =
     <div>
         <div className='reference'>1. https://www.manufacturingchemist.com/news/article_page/Peristaltic_pumps__advantages_and_applications/74693</div>
@@ -184,7 +178,6 @@ const Data = {
         Title: 'Sampling',
         Subtitle: 'Auto sampling with peristaltic pump ',
         image: Constant.image.topfull.sampling,
-        Underimage: 'reference: http://keni.candlecomfortzone.com water-samples '
     },
     content: {
         Introduction: `In our device, in order to let the following detected process work out properly, we first set up the automated sampling mechanism. We want to collect the sample out of the pool or the fish farm that we’re target at to get the real-time monitoring of the water condition, and here we only focus on the number of vibrio in our project.`,
@@ -200,9 +193,6 @@ const Data = {
             },
             {  Title: 'Result',
                Description: Result
-            },
-            { Title: 'File download',
-              Description: Download
             },
             { Title: 'Reference',
               Description: Reference

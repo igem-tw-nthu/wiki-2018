@@ -16,7 +16,7 @@ const  Temperature =
         <div className='part'>Our Vibrio detection device needs to be able to react in a stable 30 ° C environment. It is hoped that a method can be designed to heat up when the ambient temperature is high and cool down when the temperature is low. The cooling technologies used today are mainly the following: "high pressure gas expansion and cooling", "liquid evaporation and refrigeration", "gas vortex cooling", "semiconductor refrigeration" and "chemical cooling", and we choose "semiconductor cooling", which is a relatively easy to complete and within the capability range.</div>
 
         <div className='part'>
-            <div className='part-title'>First period</div>
+            <div className='part-title'>First step</div>
             <div className='innerpart'>Common methods for cooling semiconductors include water cooling and fan cooling. Among them, due to our large architecture, water cooling is effective but too cumbersome and heavy. Limited by the space configuration, we use fan cooling. (Picture 4) By keep bringing the heat away, the temperature gradient of the chip become larger, and finally it will stop at a balanced point. We also add a fan on the cold side since we want the cold air to be uniformed inside the box. (Picture 5) Temperature-controlled circuits are more cumbersome and too complicated circuits are not suitable for use in our system, so we try to use temperature control module first. (Picture 6)</div>
             <div className='illustration'>
                 <img className='illust-image' src={Constant.image.environment.first}/>
@@ -33,7 +33,7 @@ const  Temperature =
 
 
         <div className='part'>
-            <div className='part-title'>Second period</div>
+            <div className='part-title'>Second step</div>
     	    <div className='innerpart'>To enlarge the temperature difference, we add a more powerful fan on the hot side to make sure the rate of heat dissipation is enough for the rate of chip getting cold, which is a 12V-2wire one. As a result, the inbox environment could drop 3℃, but still didn’t reach our expectation.</div>
             <div className='illustration'>
                 <img className='illust-image' src={Constant.image.environment.second}/>
@@ -51,7 +51,7 @@ const  Temperature =
 
 
         <div className='part'>
-            <div className='part-title'>Final period</div>
+            <div className='part-title'>Final step</div>
             <div className='innerpart'>To reduce the unknown impact on the experiment, we use two cold device and one hot device to control the temperature. Hot device is similar to cold one, the only different is its two fans are all 5V-2wire, which is the device we used in the first period.</div>
         　　<div className='innerpart'>This time we use two cold devices to find for the lowest temperature. Figure 1 shows the result we test cold or hot devices, and Figure 2 shows the changing after we turn off the devices.</div>
             <div className='illustration'>

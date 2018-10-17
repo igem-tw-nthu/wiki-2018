@@ -169,7 +169,9 @@ if(process.env.NODE_ENV === 'development'){
       drylab_overview: '../assets/images/topfull/drylab_overview.top.png',
       demonstration: '../assets/images/topfull/demonstration.top.png',
       notebook: '../assets/images/topfull/notebook.top.png',
-      attribution: '../assets/images/topfull/attribution.top.png'
+      attribution: '../assets/images/topfull/attribution.top.png',
+      gold: '../assets/images/topfull/gold.top.png',
+      model: '../assets/images/topfull/model.top.png'
     },
 
     member:{
@@ -234,7 +236,6 @@ if(process.env.NODE_ENV === 'development'){
       meetup_presentation: '../assets/images/hp/public/presentation.png',
 
       trans: '../assets/images/hp/public/trans.png',
-      hspectre: '../assets/images/hp/public/hspectrum.png',
 
       discuss_1: '../assets/images/hp/public/discuss.1.png',
       discuss_2_1: '../assets/images/hp/public/discuss.2.1.png',
@@ -283,8 +284,14 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     home: {
-      overview: 'http://2018.igem.org/wiki/images/0/01/T--NTHU_Taiwan--home_overview.png'
+      overview: 'http://2018.igem.org/wiki/images/0/01/T--NTHU_Taiwan--home_overview.png',
+      drylab: 'http://2018.igem.org/wiki/images/1/16/T--NTHU_Taiwan--home--drylab.png',
+      wetlab: 'http://2018.igem.org/wiki/images/4/48/T--NTHU_Taiwan--home--wetlab.png',
+      hp: 'http://2018.igem.org/wiki/images/9/99/T--NTHU_Taiwan--home--hp.png',
+      project: 'http://2018.igem.org/wiki/images/2/29/T--NTHU_Taiwan--home--project.png',
+      team: 'http://2018.igem.org/wiki/images/3/31/T--NTHU_Taiwan--home--team.png',
     },
+
 
     description: {
       infected: 'http://2018.igem.org/wiki/images/f/f1/T--NTHU_Taiwan--infected.png'
@@ -312,7 +319,7 @@ if(process.env.NODE_ENV === 'development'){
 
     model:{
       interaction: 'http://2018.igem.org/wiki/images/6/6c/T--NTHU_Taiwan--interaction.png',
-      result: 'http://2018.igem.org/wiki/images/c/c6/T--NTHU_Taiwan--result.png'
+      result: 'http://2018.igem.org/wiki/images/2/20/T--NTHU_Taiwan--model--result.png'
     },
 
     experiment: {
@@ -342,7 +349,7 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     drylab_overview: {
-      plate: 'http://2018.igem.org/wiki/images/2/23/T--NTHU_Taiwan--plate.png',
+      plate: 'http://2018.igem.org/wiki/images/a/ab/T--NTHU_Taiwan--drylab--plate.png',
       box: 'http://2018.igem.org/wiki/images/f/fe/T--NTHU_Taiwan--box.png'
     },
 
@@ -378,8 +385,8 @@ if(process.env.NODE_ENV === 'development'){
 
     platform: {
       transparent: 'http://2018.igem.org/wiki/images/2/2d/T--NTHU_Taiwan--transparent.png',
-      moving: 'http://2018.igem.org/wiki/images/e/e8/T--NTHU_Taiwan--moving.png',
-      block: 'http://2018.igem.org/wiki/images/5/59/T--NTHU_Taiwan--block.png'
+      moving: 'http://2018.igem.org/wiki/images/6/64/T--NTHU_Taiwan--plaform--moving.png',
+      block: 'http://2018.igem.org/wiki/images/6/68/T--NTHU_Taiwan--plaform--block.png'
     },
 
     application:{
@@ -403,7 +410,7 @@ if(process.env.NODE_ENV === 'development'){
       environment: 'http://2018.igem.org/wiki/images/c/c7/T--NTHU_Taiwan--environment.top.png',
       member: 'http://2018.igem.org/wiki/images/d/d2/T--NTHU_Taiwan--member.top.png',
       public: 'http://2018.igem.org/wiki/images/5/55/T--NTHU_Taiwan--public.top.png',
-      attribution: '../assets/images/topfull/attribution.top.png',
+      attribution: 'http://2018.igem.org/wiki/images/7/74/T--NTHU_Taiwan--attribution.top.png',
       sampling: 'http://2018.igem.org/wiki/images/c/c0/T--NTHU_Taiwan--sampling.top.png',
       platform: 'http://2018.igem.org/wiki/images/b/b7/T--NTHU_Taiwan--platform.top.png',
       sponsor: 'http://2018.igem.org/wiki/images/2/26/T--NTHU_Taiwan--sponsor.top.png',
@@ -415,7 +422,9 @@ if(process.env.NODE_ENV === 'development'){
       wetlab_overview: 'http://2018.igem.org/wiki/images/c/c3/T--NTHU_Taiwan--wetlab_overview.top.png',
       drylab_overview: 'http://2018.igem.org/wiki/images/6/61/T--NTHU_Taiwan--drylab_overview.top.png',
       demonstration: 'http://2018.igem.org/wiki/images/4/4a/T--NTHU_Taiwan--demonstration.top.png',
-      notebook: 'http://2018.igem.org/wiki/images/2/21/T--NTHU_Taiwan--notebook.top.png'
+      notebook: 'http://2018.igem.org/wiki/images/2/21/T--NTHU_Taiwan--notebook.top.png',
+      gold: 'http://2018.igem.org/wiki/images/4/41/T--NTHU_Taiwan--gold.top.png',
+      model: 'http://2018.igem.org/wiki/images/9/93/T--NTHU_Taiwan--model.top.png'
     },
 
     member:{
@@ -435,6 +444,8 @@ if(process.env.NODE_ENV === 'development'){
       Vanessa_Chuang : 'http://2018.igem.org/wiki/images/1/1a/T--NTHU_Taiwan--Vanessa_Chuang.png',
       Kai_Chiang_Yu: 'http://2018.igem.org/wiki/images/e/ef/T--NTHU_Taiwan--Kai-Chiang_Yu.png',
       Lily_Huang: 'http://2018.igem.org/wiki/images/6/6d/T--NTHU_Taiwan--Lily_Huang.png',
+      Kevin_Wang: 'http://2018.igem.org/wiki/images/5/5c/T--NTHU_Taiwan--kevin.png',
+      Chia_Min_Huang: 'http://2018.igem.org/wiki/images/0/02/T--NTHU_Taiwan--mickey.png',
       icon: {
         bug: 'http://2018.igem.org/wiki/images/0/09/T--NTHU_Taiwan--bug.svg',
         pokemon: 'http://2018.igem.org/wiki/images/9/97/T--NTHU_Taiwan--pokemon.svg'
@@ -477,10 +488,7 @@ if(process.env.NODE_ENV === 'development'){
       meetup_group: 'http://2018.igem.org/wiki/images/f/f4/T--NTHU_Taiwan--meetup.group.png',
       meetup_self: 'http://2018.igem.org/wiki/images/3/3f/T--NTHU_Taiwan--meetup.self.png',
       meetup_presentation: 'http://2018.igem.org/wiki/images/3/30/T--NTHU_Taiwan--presentation.png',
-
-      trans: 'http://2018.igem.org/wiki/images/f/fe/T--NTHU_Taiwan--trans.png',
-      hspectre: 'http://2018.igem.org/wiki/images/0/05/T--NTHU_Taiwan--hspectrum.png',
-
+      trans: 'http://2018.igem.org/wiki/images/f/f1/T--NTHU_Taiwan--public--trans.png',
       discuss_1: 'http://2018.igem.org/wiki/images/b/bd/T--NTHU_Taiwan--discuss.1.png',
       discuss_2_1: 'http://2018.igem.org/wiki/images/6/63/T--NTHU_Taiwan--discuss.2.1.png',
       discuss_2_2: 'http://2018.igem.org/wiki/images/a/aa/T--NTHU_Taiwan--discuss.2.2.png',

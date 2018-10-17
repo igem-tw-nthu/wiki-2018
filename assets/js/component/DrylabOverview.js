@@ -46,6 +46,7 @@ const ACE =
         <div className='illustration'>
             <div className='illust-image-wrapper'>
                 <img className='illust-image' src={Constant.image.drylab_overview.box}/>
+                <div className='undertext'>Automatic Color-detecting Examiner</div>
             </div>
         </div>
     </div>
@@ -67,6 +68,7 @@ const  Application =
         </div>
         <div className='illustration'>
             <img className='illust-image' src={Constant.image.drylab_overview.plate}/>
+            <div className='undertext'>The color gradient changing process</div>
         </div>
     </div>
 

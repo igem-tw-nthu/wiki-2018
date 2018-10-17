@@ -107,7 +107,7 @@ const Downtext =
 const Data ={
     viewbar: {
         Title: 'Gold',  
-        Subtitle: '',
+        Subtitle: 'The evolution of our project',
         image: Constant.image.topfull.gold
     },
     content:{

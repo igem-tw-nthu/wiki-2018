@@ -100,18 +100,15 @@ const Problem =
                 In the beginning, we planned to use OpenCV built-in function Houghcircles to do image detection. The detail of the function is that it can find circles on the image automatically. It completely meets our expectation. However, the distance and angle of each sample from the camera is different. As a result, the shape of the sample is not a circle on the captured image and leads to wrong detection by Houghcircles. For this reason, we changed the method and decided to locate the samples manually to get a high accuracy.
             </div>
         </div>
-    </div>
-
-
-const LED = 
-    <div>
         <div className='part'>
+        <div className='part-title'>4. LED strip vs. Big bulb</div>
         <div className='illustration'>
             <img className='illust-image' src={Constant.image.imaging.light} />
         </div>
         In order to prevent the influence of environment outside the device, ACE is designed to be enclosed. Therefore, it is completely dark inside the device and needs a light source to do image detection. In the beginning, we thought a big bulb is simple and suitable. Nevertheless, after we tested, we found the light on the image is not even, it would result in the wrong analysis. As a result, we chose LED strip. Its light is not only even but also bright enough.
         </div>
     </div>
+
 
 
 const Code = 
@@ -138,9 +135,6 @@ const Data = {
             },
             { Title: 'Problems',
               Description: Problem
-            },
-            { Title: 'LED strip vs. Big bulb',
-              Description: LED
             },
             { Title: 'Code Download',
               Description: Code

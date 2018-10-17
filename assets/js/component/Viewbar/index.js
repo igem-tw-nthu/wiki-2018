@@ -28,7 +28,7 @@ const Title = styled.div`
 
 const Subtitle = styled.div`
     font-size: 30px;
-    color: 003366;
+    color: #003366;
     width: 500px;
     `
 

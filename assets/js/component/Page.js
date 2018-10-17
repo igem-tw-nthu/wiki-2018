@@ -68,88 +68,88 @@ const Route =[
 
     // Project
     { path: base+'/Description',
-      main: <Description name='Description'/>
+      main: <Description />
     },
     { path: base+'/Design',
-      main: <Design name='Design'/>
+      main: <Design/>
     },
-    { path: base+'/Demonstration',
-      main: <Demonstration name='Demonstration'/>
+    { path: base+'/Demonstrate',
+      main: <Demonstration/>
     },
     { path: base+'/Contribution',
-      main: <Contribution name='Contribution'/>
+      main: <Contribution/>
     },
    
     // Team
     { path: base+'/Member',
-      main: <Member name='Member'/>
+      main: <Member/>
     },
     { path: base+'/Sponsor',
-      main: <Sponsor name='Sponsor'/>
+      main: <Sponsor />
     },
-    { path: base+'/Attribution',
-      main: <Attribution name='Attribution'/>
+    { path: base+'/Attributions',
+      main: <Attribution/>
     },
 
     // Drylab
     { path: base+'/Drylab-Overview',
-      main: <DrylabOverview name='Overview'/>
+      main: <DrylabOverview />
     },
     { path: base+'/Platform',
-      main: <Platform name='Platform'/>
+      main: <Platform />
     },
     { path: base+'/Imaging',
-      main: <ImageDetection name='Imaging'/>
+      main: <ImageDetection />
     },
     { path: base+'/Sampling',
-      main: <Sampling name='Sampling'/>
+      main: <Sampling />
     },
     { path: base+'/Environment',
-      main: <Environment name='Environment'/>
+      main: <Environment/>
     },
     { path: base+'/Software',
-      main: <Software name="Software"/>
+      main: <Software/>
 
     },
     { path: base+'/Application',
-      main: <Application name='Application'/>
+      main: <Application/>
     },
 
     
     // Wetlab
     { path: base+'/Wetlab-Overview',
-      main: <WetlabOverview name='Overview'/>
+      main: <WetlabOverview/>
     },
     { path: base+'/Model',
-      main: <Model name='Model'/>
+      main: <Model />
     },
     { path: base+'/Experiment',
-      main: <Experiment name='Experiment'/>
+      main: <Experiment />
     },
     { path: base+'/Parts',
-      main: <Parts name='Parts'/>
+      main: <Parts />
     },
   
     { path: base+'/Protocol',
-      main: <Protocol name='Protocol'/>
+      main: <Protocol/>
     },
     { path: base+'/Notebook',
-      main: <Notebook name='Notebook'/>
+      main: <Notebook />
     },
 
     // Human Practice
     { path: base+'/Gold',
-      main: <Gold name='Gold'/>,
+      main: <Gold/>,
     },
 
     { path: base+ '/Education',
-      main: <Education name='Education'/>
+      main: <Education />
     },
     { path: base+'/Interview',
-      main: <Interview name='Interview'/>
+      main: <Interview/>
     },
     { path: base+'/Public_Engagement',
-      main: <Public name='Public'/>,
+      main: <Public/>,
     },
     { path: base+'/Collaborations',
       main: <Collaboration/>,
@@ -157,10 +157,7 @@ const Route =[
 
     //  for judge form
     { path: base+'/Human_Practices',
-      main: <Gold />
-    },
-    { path: base+ '/Public_Engagement',
-      main: <Public/>
+      main: <Gold/>
     },
     { path: base+ '/Applied_Design',
       main: <Application/>
@@ -182,7 +179,7 @@ let Link = [
     },
 
     { display: 'Drylab',
-      sublink: ['Drylab-Overview','Sampling','Platform','Environment','Imaging','Software','Application','Demonstration']
+      sublink: ['Drylab-Overview','Sampling','Platform','Environment','Imaging','Software','Application','Demonstrate']
     },
 
     { display: 'Wetlab',
@@ -193,7 +190,7 @@ let Link = [
       sublink: [ 'Education','Public_Engagement','Interview','Collaborations', 'Gold']
     },
     { display: 'Team',
-      sublink: ['Member','Sponsor','Attribution'] 
+      sublink: ['Member','Sponsor','Attributions'] 
     },
 
 ]

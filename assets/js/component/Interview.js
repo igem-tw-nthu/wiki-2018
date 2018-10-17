@@ -12,14 +12,17 @@ const ResearchInstitute =
         </div>
         <div>
             Fisheries Research Institute, COA, which is the government agency offers fish farmers to test the pathogen of fish and also, doing some researches on aquatic organisms as well. Deputy director of COA, C.I. Chang, who is a master in marine biology, recently did lots of researches on aquatic animal and pathogen, creating the MV-kit as well. The kit which function is to test the number of Vibrio in the water. And of course, FRI is the closest department between the local fish farmers and the public. As a result, we decided to visit him to get more helpful information and suggestions for our project. During our in-depth talk, we knew more about the Vibrio and, our core of the automated device, 
-            <a href='http://2018.igem.org/Team:NTHU_Taiwan/Drylab-Overview'> ACE</a>. For example, after knowing the detailed information about the basic characteristics of Vibrio and the mechanism of MV-kit, making us want to combine the kit with our device and if it comes true, the device will be powerful. In the end, deputy director also gave us a few useful, potential advice and questions between our device and the kit. These feedbacks inspired us pretty much, such as whether our device would be influenced by the precipitation or not, or do we need some kinds of membrane to filter the aquatic sample or not, and in order to maintain the integrity and accuracy of our device, we have to test the efficiency of MV-kit in different environments and to find the simplest way that fish farmers can easily use. Nicely, the deputy director offering the plate of Vibrio harveyi and MV-kit for free in order to encourage us to make our experiment more complete.
+             <a href='http://2018.igem.org/Team:NTHU_Taiwan/Drylab-Overview'>ACE</a>. For example, after knowing the detailed information about the basic characteristics of Vibrio and the mechanism of MV-kit, making us want to combine the kit with our device and if it comes true, the device will be powerful. In the end, deputy director also gave us a few useful, potential advice and questions between our device and the kit. These feedbacks inspired us pretty much, such as whether our device would be influenced by the precipitation or not, or do we need some kinds of membrane to filter the aquatic sample or not, and in order to maintain the integrity and accuracy of our device, we have to test the efficiency of MV-kit in different environments and to find the simplest way that fish farmers can easily use. Nicely, the deputy director offering the plate of Vibrio harveyi and MV-kit for free in order to encourage us to make our experiment more complete.
         </div>
     </div>
 
 
 const Fisherman =
     <div>
-        In order to improve our project, we need to gain as much feedback as possible from the potential users; therefore, we’ve visited local fisherman in Taiwan, of which we can categorize into ecological and traditional breeding fish farmers.
+        <div>In order to improve our project, we need to gain as much feedback as possible from the potential users; therefore, we’ve visited local fisherman in Taiwan, of which we can categorize into ecological and traditional breeding fish farmers.</div>
+        <div className='illustration'>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/NwxEiwLPtb8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     </div>
 
 

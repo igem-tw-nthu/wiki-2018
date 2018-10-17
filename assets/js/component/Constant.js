@@ -453,7 +453,7 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     attribution:{
-      list: 'http://2018.igem.org/wiki/images/e/e9/T--NTHU_Taiwan--list.png'
+      list: 'http://2018.igem.org/wiki/images/1/11/T--NTHU_Taiwan--attribution--list.png'
     },
 
     supervisor: {

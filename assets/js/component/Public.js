@@ -121,7 +121,6 @@ const XGEM =
         </div>
         <div>Interacting with people from different backgrounds is amazing and we do cherish every moment we engaged with other iGEM teams to exchange ideas as well as share techniques. For us, bringing the people across the world together to brainstorm about synthetic biology and how to make this world a better place is the magic of iGEM. Therefore, we established a platform on Slack named XGEM. On XGEM, teams can share information and ask questions immediately. So far, 18 teams from 14 different countries have joined XGEM. More about the teams joining XGEM:</div>
         <div> 
-            
             <div className='illustration'>
                 <img className='illust-image' src={Constant.image.public.chart_1}/>
             </div>

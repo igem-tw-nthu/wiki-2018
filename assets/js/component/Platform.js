@@ -85,7 +85,7 @@ const Lightblock =
 
 const Movinglid = 
     <div>
-        <div>Since the MV-kit buffer and solution might evaporate, we need to construct an auto moving lid. The lid has 48 holes on it, each hole is 9.1 mm next to the well. This lid is connected with a gear and a stepper motor. Every time the sample is being dripped into the well, the motor will move the lid by 9.1 mm. The gear system and the base of the motor are also made by 3D printing. 
+        <div>Since the MV-kit buffer and solution might evaporate, we need to construct an auto moving lid. The lid has 24 holes on it, each hole is 9.1 mm next to the well. This lid is connected with a gear and a stepper motor. Every time the sample is being dripped into the well, the motor will move the lid by 9.1 mm. The gear system and the base of the motor are also made by 3D printing. 
              Moreover, we’ve designed the lid to be detachable so that the farmer can remove the lid when they are going to substitute the 96 well plates with a new one every two weeks. </div>
         <div className='illustration'>
             <img className='illust-image' src={Constant.image.platform.moving}/>

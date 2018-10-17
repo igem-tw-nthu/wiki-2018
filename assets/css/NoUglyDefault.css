@@ -102,6 +102,12 @@ p{
     border-collapse: collapse;
 }
 
+table{
+    border-collapse: collapse;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+
 
 .tabledata{
     border: 1px solid black;
@@ -136,6 +142,6 @@ p{
 }
 
 
-.special-name{
+/* .special-name{
     font-style: italic;
-}
+} */

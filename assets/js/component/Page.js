@@ -141,6 +141,7 @@ const Route =[
     { path: base+'/Gold',
       main: <Gold name='Gold'/>,
     },
+
     { path: base+ '/Education',
       main: <Education name='Education'/>
     },
@@ -150,9 +151,27 @@ const Route =[
     { path: base+'/Public_Engagement',
       main: <Public name='Public'/>,
     },
-    { path: base+'/Collaboration',
-      main: <Collaboration name='Collaboration'/>,
+    { path: base+'/Collaborations',
+      main: <Collaboration/>,
     },
+
+    //  for judge form
+    { path: base+'/Human_Practices',
+      main: <Gold />
+    },
+    { path: base+ '/Public_Engagement',
+      main: <Public/>
+    },
+    { path: base+ '/Applied_Design',
+      main: <Application/>
+    },
+    { path: base+ '/Hardware',
+      main: <DrylabOverview/>
+    },
+    { path: base+ '/Interlab',
+      main: <Contribution/>
+    }
+
 ]
 
 
@@ -171,7 +190,7 @@ let Link = [
     },
 
     { display: 'Human Practice',
-      sublink: [ 'Education','Public_Engagement','Interview','Collaboration', 'Gold']
+      sublink: [ 'Education','Public_Engagement','Interview','Collaborations', 'Gold']
     },
     { display: 'Team',
       sublink: ['Member','Sponsor','Attribution'] 

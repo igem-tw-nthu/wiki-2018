@@ -256,9 +256,6 @@ if(process.env.NODE_ENV === 'development'){
       group: '../assets/images/hp/education/group.png'
     },
 
-    demonstration:{
-      ace: '../assets/images/drylab/demonstration/ace.png'
-    },
     gold:{
       overview: '../assets/images/hp/gold/overview.png'
     }
@@ -294,7 +291,7 @@ if(process.env.NODE_ENV === 'development'){
     },
 
     design: {
-      cycle: 'http://2018.igem.org/wiki/images/9/99/T--NTHU_Taiwan--cycle.png',
+      cycle: 'http://2018.igem.org/wiki/images/5/55/T--NTHU_Taiwan--design--cycle.png',
       exp : 'http://2018.igem.org/wiki/images/8/8d/T--NTHU_Taiwan--exp.png',
       equlibrium : 'http://2018.igem.org/wiki/images/5/5d/T--NTHU_Taiwan--equi.png',
       secrete: 'http://2018.igem.org/wiki/images/b/b6/T--NTHU_Taiwan--secrete.png',
@@ -305,7 +302,7 @@ if(process.env.NODE_ENV === 'development'){
     wetlab_overview: {
       system: 'http://2018.igem.org/wiki/images/0/02/T--NTHU_Taiwan--Wetlab_system.png',
       mechanism: 'http://2018.igem.org/wiki/images/6/60/T--NTHU_Taiwan--mechanism.png',
-      ahl: 'http://2018.igem.org/wiki/images/d/dc/T--NTHU_Taiwan--ahl.png',
+      ahl: 'http://2018.igem.org/wiki/images/5/51/T--NTHU_Taiwan--wetlab--ahl.png',
       detection: 'http://2018.igem.org/wiki/images/2/21/T--NTHU_Taiwan--detection.png',
       lacl: 'http://2018.igem.org/wiki/images/2/23/T--NTHU_Taiwan--lacl.png',
       riboswitch: 'http://2018.igem.org/wiki/images/3/3c/T--NTHU_Taiwan--riboswitch.png',
@@ -366,9 +363,9 @@ if(process.env.NODE_ENV === 'development'){
     sampling:{
       pump: 'http://2018.igem.org/wiki/images/6/67/T--NTHU_Taiwan--pump.png',
       full_pump: 'http://2018.igem.org/wiki/images/6/6b/T--NTHU_Taiwan--full_pump.png',
-      list: 'http://2018.igem.org/wiki/images/e/e9/T--NTHU_Taiwan--list.png',
+      list: 'http://2018.igem.org/wiki/images/5/55/T--NTHU_Taiwan--sampling--list.png',
       head: 'http://2018.igem.org/wiki/images/2/20/T--NTHU_Taiwan--head.png',
-      result: 'http://2018.igem.org/wiki/images/c/c6/T--NTHU_Taiwan--result.png'
+      result: 'http://2018.igem.org/wiki/images/0/0c/T--NTHU_Taiwan--sampling--result.png'
     },
 
     environment:{
@@ -503,13 +500,11 @@ if(process.env.NODE_ENV === 'development'){
       pie_3: 'http://2018.igem.org/wiki/images/4/42/T--NTHU_Taiwan--pie.3.png',
       group: 'http://2018.igem.org/wiki/images/f/f9/T--NTHU_Taiwan--group.png'
     },
+    gold:{
+      overview: 'http://2018.igem.org/wiki/images/f/f8/T--NTHU_Taiwan--gold--overview.png'
+    }
+
   }
-}
-
-
-const Color ={
-  darkblue: '#003366',
-
 }
 
 
@@ -518,5 +513,4 @@ export default {
     image: Image,
     video: Video,
     url: Url,
-    color: Color
 }

@@ -33,7 +33,7 @@ const Page =
 
 const Data = {
     viewbar:{
-        Title: 'Collaboration',
+        Title: 'Collaborations',
         Subtitle: 'Exchanged ideas with people all over the world ',
         image: Constant.image.topfull.collaboration
     },

@@ -92,7 +92,7 @@ const Reference=
 const Data = {
     viewbar: {
         Title: 'Environment',
-        Subtitle: 'Led Light, and peltier coller',
+        Subtitle: 'Led Light, and peltier cooler',
         image: Constant.image.topfull.environment
     },
     content:{

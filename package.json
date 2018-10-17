@@ -5,6 +5,7 @@
   "scripts": {
     "webpack": "webpack --watch",
     "build": "webpack -p",
+    "production-test": "webpack -p --watch", 
     "live-server": "live-server --entry-file=views/ --watch=./assets/bundles --no-browser"
   },
   "repository": {

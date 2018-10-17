@@ -18,7 +18,7 @@ const PageWrapper = styled.div`
     `
 const ContentWrapper =  styled.div`
     position: relative;
-    top: 70px;
+    top: 60px;
     ${({mobile})=> mobile && `
         top: 50px;
     `}

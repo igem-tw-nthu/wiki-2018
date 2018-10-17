@@ -16,11 +16,11 @@ const Introduction =
 
 
 const Explosion =
-    <iframe width="923" height="519" src="https://www.youtube.com/embed/didyeianZ9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe  style={{height:'500px', width:'100%'}} src="https://www.youtube.com/embed/didyeianZ9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 const Demo =
-    <iframe width="923" height="519" src="https://www.youtube.com/embed/yOVGhMbamdk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe style={{height:'500px', width:'100%'}} src="https://www.youtube.com/embed/yOVGhMbamdk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 const Data = {
     viewbar:{

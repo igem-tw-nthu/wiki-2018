@@ -258,6 +258,9 @@ if(process.env.NODE_ENV === 'development'){
 
     demonstration:{
       ace: '../assets/images/drylab/demonstration/ace.png'
+    },
+    gold:{
+      overview: '../assets/images/hp/gold/overview.png'
     }
   }
 }else{
